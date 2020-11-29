@@ -1,5 +1,5 @@
 {
-  "name": "cakephp-theme-banana",
+  "name": "cupcake-theme-banana",
   "version": "0.1.0",
   "description": "",
   "main": "",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fm-labs/cakephp-theme-banana.git"
+    "url": "git+https://github.com/fm-labs/cupcake-theme-banana.git"
   },
   "author": "fm-labs <flowmotionlabs@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fm-labs/cakephp-theme-banana/issues"
+    "url": "https://github.com/fm-labs/cupcake-theme-banana/issues"
   },
-  "homepage": "https://github.com/fm-labs/cakephp-theme-banana#readme",
+  "homepage": "https://github.com/fm-labs/cupcake-theme-banana#readme",
   "private": true,
   "dependencies": {
     "md5": "^2.2.1"
