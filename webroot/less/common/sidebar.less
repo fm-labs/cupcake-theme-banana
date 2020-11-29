@@ -1,0 +1,318 @@
+@import "variables";
+
+
+// S I D E B A R
+.sidebar-link-icon-svg(@iconset; @icon) {
+  @url: "../img/brand/iconset/@{iconset}/icon-@{icon}-@{iconset}.svg";
+  background-image: url(@url);
+}
+
+.sidebar {
+
+  background-color: @sidebar-bg-color;
+  color: @sidebar-text-color;
+  box-shadow: #333 -2px 0 7px;
+
+  a {
+    color: @color-link-highlight;
+  }
+
+  a:hover {
+    color: @color-link;
+  }
+
+
+  .sidebar-item {
+    padding-bottom: 20px;
+  }
+
+  .sidebar-logo {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  .sidebar-user {
+    display: none;
+  }
+
+  .sidebar-user-profile {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .sidebar-user-image {
+    height: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .img-user {
+      border: 5px solid @color-text;
+      width: 120px;
+      height: 120px;
+
+      //:hover { // @todo remove
+      //  border-width: 10px;
+      //}
+    }
+
+  }
+
+  .sidebar-user-counter {
+    margin-top: -30px;
+    margin-left: 80px;
+
+    span {
+      background-color: @color-link;
+      padding: 5px 10px;
+      display: inline-block;
+      border-radius: 12px;
+      font-size: 12px;
+      line-height: 1em;
+      margin: 0;
+    }
+  }
+
+  .sidebar-user.user-success {
+    .sidebar-user-image .img-user {
+      border-color: @color-success;
+    }
+    .user-status, .user-status a {
+      color: @color-success;
+    }
+  }
+
+  .sidebar-user.user-danger {
+    .sidebar-user-image .img-user {
+      border-color: @color-danger;
+    }
+    .user-status, .user-status a {
+      color: @color-danger;
+    }
+  }
+
+  .sidebar-user.user-warning {
+    .sidebar-user-image .img-user {
+      border-color: @color-warning;
+    }
+    .user-status, .user-status a {
+      color: @color-warning;
+    }
+  }
+
+  .sidebar-header {
+
+  }
+
+  .sidebar-header-mobile {
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    height: 60px;
+
+    /*
+    background-image: url("../img/brand_icon_dark.png");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    background-size: 40px;
+    */
+
+    .mobile-logo {
+      float: left;
+      padding: 10px;
+
+      img {
+        height: 40px;
+      }
+    }
+
+    .mobile-menutoggle {
+      float: right;
+      margin: 0;
+      padding: 0;
+      position: relative;
+
+      a {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 20px;
+        margin: 0;
+        display: inline-block;
+        color: @color-link;
+      }
+    }
+
+    .mobile-user {
+      float: right;
+      padding: 10px;
+
+      img {
+        height: 40px;
+      }
+    }
+  }
+
+  .sidebar-header-screen {
+    margin-bottom: 2em;
+  }
+
+  .sidebar-menu {
+
+    display: none;
+
+    ul.nav {
+      li {
+        border-bottom: 1px solid @color-border;
+        //padding: 11px 0.5em;
+
+        &:first-child {
+          border-top: 1px solid @color-border;
+        }
+
+        a {
+          font-weight: 300;
+          width: 100%;
+          display: inline-block;
+          padding: 11px 10px;
+          //background-size: 20px 20px;
+          //background-repeat: no-repeat;
+          //background-position: 20px 8px;
+          //line-height: 1.1em;
+          //font-size: 1.1em;
+
+          //.sidebar-link-icon-svg("blue", "details");
+        }
+
+        a:before {
+          padding-right: 40px;
+        }
+
+        a[data-icon]:before {
+          //font-size: 1.3em;
+          //line-height: 1em;
+        }
+
+        a:hover, a:link, a:active, a:visited {
+          background-color: transparent;
+        }
+
+        /*
+        'acceped', 'arrow-down', 'arrow-left', 'arrow-right', 'arrow-up',
+            'cake-sheet', 'check', 'danger', 'dashcan', 'details','dokument',
+            'email','handy','key','megaphone','moon','ok','option','person','pin',
+            'post','star','sun','support','tool','uebersicht','user','write','x'
+        */
+        //a[data-icon="person"] { .sidebar-link-icon-svg("blue", "person");};
+        //a[data-icon="uebersicht"] { .sidebar-link-icon-svg("blue", "uebersicht") };
+        //a[data-icon="check"] { .sidebar-link-icon-svg("blue", "check") };
+        //a[data-icon="details"] { .sidebar-link-icon-svg("blue", "details") };
+        //a[data-icon="post"] { .sidebar-link-icon-svg("blue", "post") };
+        //a[data-icon="option"] { .sidebar-link-icon-svg("blue", "option") };
+        //a[data-icon="moon"] { .sidebar-link-icon-svg("blue", "moon") };
+        //a[data-icon="key"] { .sidebar-link-icon-svg("blue", "key") };
+      }
+
+      li.active {
+        background-color: @color-link;
+
+        > a {
+          color: @color-highlight;
+        }
+
+        //a[data-icon="person"] { .sidebar-link-icon-svg("white", "person") };
+        //a[data-icon="uebersicht"] { .sidebar-link-icon-svg("white", "uebersicht") };
+        //a[data-icon="check"] { .sidebar-link-icon-svg("white", "check") };
+        //a[data-icon="details"] { .sidebar-link-icon-svg("white", "details") };
+        //a[data-icon="post"] { .sidebar-link-icon-svg("white", "post") };
+        //a[data-icon="option"] { .sidebar-link-icon-svg("white", "option") };
+        //a[data-icon="moon"] { .sidebar-link-icon-svg("white", "moon") };
+        //a[data-icon="key"] { .sidebar-link-icon-svg("white", "key") };
+      }
+
+      li:hover {}
+    }
+
+  }
+
+  .sidebar-bottom {
+    position: relative;
+
+    .sidebar-menu ul li:first-child {
+      border-top-width: 0;
+    }
+  }
+
+  .sidebar-bottom-info {
+    padding: 20px 0 0 20px;
+  }
+}
+
+
+/** RESPONSIVE **/
+@media  only screen and (min-height: 700px) and (min-width: 992px) {
+
+  //.sidebar .sidebar-bottom {
+  //  margin-top: 1em;
+  //  position: relative !important;
+  //}
+
+  .sidebar {
+    .sidebar-bottom {
+      position: absolute !important;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+
+      .sidebar-menu ul li:first-child {
+        border-top-width: 1px;
+      }
+    }
+  }
+
+}
+
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+
+}
+
+/*  Small devices (Tablets, ≥768px) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Medium devices, (Desktops, ≥992px) */
+@media only screen and (min-width: 992px) {
+
+  body {
+    padding-left: @sidebar-width;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: @sidebar-width;
+    max-width: @sidebar-width;
+    height: 100%;
+    min-height: 500px;
+
+    .sidebar-user {
+      display: block !important;
+      visibility: visible;
+    }
+
+    .sidebar-menu {
+      display: block !important;
+      visibility: visible;
+    }
+  }
+
+}
+
+/* Large devices, (Desktops, ≥1200px) */
+@media only screen and (min-width: 1200px) {
+
+}

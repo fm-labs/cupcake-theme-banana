@@ -1,0 +1,136 @@
+form {
+}
+
+form fieldset legend {
+  font-weight: bold;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+}
+
+form .form-group {
+  min-height: 42px;
+}
+
+form .form-control {
+  color: @color-input;
+  font-size: @font-size-base;
+  line-height: 1em;
+  border-width: 0;
+  border-radius: 0;
+  border-color: #C1C1C1;
+
+  &:focus, &:active {
+    box-shadow: none;
+    color: #141C23 !important;
+    border-color: #88C7EA !important;
+  }
+
+  &:hover {
+    box-shadow: none;
+    color: #1D2730 !important;
+    border-color: #1D2730 !important;
+  }
+}
+
+form input.form-control {
+  border-width: 0 0 2px 0;
+  padding: 10px;
+  //height: 50px;
+  height: auto;
+  box-shadow: none !important;
+  background-color: #fafafa;
+}
+
+form textarea.form-control {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  border-width: 2px;
+}
+
+form input.input-block {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+form .help-block {
+  padding: 3px 0;
+}
+
+
+form .required label::after {
+  content:"*"
+}
+
+form .has-error {
+
+  label {
+    color: @color-danger;
+  }
+
+  label, .help-block, .control-label, .radio, .checkbox, .radio-inline, .checkbox-inline,
+  .radio label, .checkbox label, .radio-inline label, .checkbox-inline label {
+    color: @color-input;
+  }
+
+  .form-control {
+    border-color: @color-danger;
+
+    &:focus, &:active {
+      box-shadow: none;
+      color: @color-danger !important;
+      border-color: @color-danger !important;
+    }
+
+    &:hover {
+      box-shadow: none;
+      color: @color-danger !important;
+      border-color: @color-danger !important;
+    }
+
+  }
+
+  .form-error {
+    color: @color-danger;
+    border-color: @color-danger;
+  }
+
+  .help-block {
+    color: @color-danger;
+    margin: 0;
+    font-size: 90%;
+  }
+}
+
+
+// H O R I Z O N T A L   F O R M
+form.form-horizontal {
+
+  .control-label {
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  // Select
+  .form-group.select {
+    .control-label {
+      padding-top: 10px;
+    }
+  }
+
+}
+
+// C E N T E R E D   F O R M
+form.form-centered {
+
+  .form-control {
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,152 @@
+
+// generate svg-icons
+//.background-icon-svg(@icon, @iconset) {
+//  @url: "../img/brand/iconset/@{iconset}/icon-@{icon}-@{iconset}.svg";
+//  background-image: url(@url);
+//}
+//
+//
+//[data-icon="person"] {     .background-icon-svg("person", "blue") };
+//[data-icon="uebersicht"] { .background-icon-svg("uebersicht", "blue") };
+//[data-icon="check"] {      .background-icon-svg("check", "blue") };
+//[data-icon="details"] {    .background-icon-svg("details", "blue") };
+//[data-icon="post"] {       .background-icon-svg("post", "blue") };
+//[data-icon="option"] {     .background-icon-svg("option", "blue") };
+//[data-icon="moon"] {       .background-icon-svg("moon", "blue") };
+//[data-icon="key"] {        .background-icon-svg("key", "blue") };
+
+
+[class^="icon-"], [class*=" icon-"] {
+
+  font-size: @font-size-base;
+  line-height: 1em;
+
+  &.icon-2x:before { font-size: 2em; }
+  &.icon-3x:before { font-size: 3em; }
+  &.icon-4x:before { font-size: 4em; }
+  &.icon-5x:before { font-size: 5em; }
+  &.icon-6x:before { font-size: 6em; }
+}
+
+
+.hamburger {
+  position: relative;
+  display: inline-block;
+  width: 1.25em;
+  height: 0.8em;
+  margin-right: 0.3em;
+  border-top: 0.2em solid #fff;
+  border-bottom: 0.2em solid #fff;
+}
+
+.hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0.3em;
+  left: 0px;
+  width: 100%;
+  border-top: 0.2em solid #fff;
+}
+
+
+/**
+ * Hamburger Menu animation from
+ * @author Valery Alikin
+ * @link https://codepen.io/AlikinVV/pen/WOOPyR
+ * @link https://github.com/alikinvv/hamburger-animation
+ * @link https://github.com/fm-labs/hamburger-animation (fork)
+ */
+
+@t: 0.2s;
+@delay: 0.05s;
+
+//originals:
+//@menu-bar-w: 75px;
+//@menu-bar-h: 10px;
+//@menu-bar-color: #000;
+
+@menu-bar-w: 40px;
+@menu-bar-h: 7px;
+@menu-bar-color: #88C7EA;
+
+.menu-icon {
+  position: absolute;
+  //top: 50%;
+  //left: 50%;
+  //transform: translate(-50%, -50%);
+  overflow: hidden;
+  padding: 15px;
+  cursor: pointer;
+  &.active {
+    &:before {
+      animation: slideLeft @t @delay ease-out forwards;
+    }
+    &:after {animation: slideRight @t @delay ease-out forwards}
+    .bar {
+      animation: rotate45 @t ease-out forwards;
+      &:last-child {animation: rotate135 @t @t ease-out forwards}
+    }
+  }
+  &.back {
+    &:before {
+      transform: translateX(-120%);
+      animation: slideBack @t @delay ease-out forwards;
+    }
+    &:after {
+      transform: translateX(120%);
+      animation: slideBack @t @delay ease-out forwards;
+    }
+    .bar {
+      transform: rotate(-45deg);
+      animation: rotateBack @t ease-out forwards;
+      &:last-child {
+        transform: rotate(-135deg);
+        animation: rotateBack @t @t ease-out forwards;
+      }
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    width: @menu-bar-w;
+    height: @menu-bar-h;
+    background: @menu-bar-color;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: @menu-bar-w;
+    height: @menu-bar-h;
+    background: @menu-bar-color;
+  }
+  .bar {
+    display: block;
+    width: @menu-bar-w;
+    height: @menu-bar-h;
+    background: @menu-bar-color;
+    margin: 14px 0;
+    &:last-child {
+      opacity: 0;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 25px;
+    }
+  }
+}
+
+@keyframes rotate135 {
+  form {
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(-135deg);
+  }
+}
+
+@keyframes rotate45 {to {transform: rotate(-45deg)}}
+@keyframes rotateBack {to {transform: rotate(0)}}
+@keyframes slideRight {to {transform: translateX(122%)}}
+@keyframes slideLeft {to {transform: translateX(-122%)}}
+@keyframes slideBack {to {transform: translateX(0)}}

@@ -1,0 +1,91 @@
+// THEME COLORS
+@color-primary:         #C9452B; //#547689;  // Brand Elements, Iconsm, Links & Headlines
+@color-second:          #535657; //#547689;  // Text & Brand Elements
+@color-third:           #354B59;  // Unwichtige Texte
+@color-highlight:       #FFFFFF;  // Aktive Elemente, Aktive Links & Aktive Icons
+@color-text:            #141C23;  // Hintergrund
+
+@color-lightgray:       #F2F5F6;
+
+@color-bg-dark:         @color-text;  // Hintergrund
+@color-bg-black:        #000000;  // Hintergrund
+@color-bg-gray:         #20282F;  // Hintergrund
+@color-bg-body:         #FFFFFF;  // Hintergrund
+
+@color-link:            @color-primary; //#88C7EA;  // Link Color
+@color-link-highlight:  #62879D;  // Link Highlight
+
+@color-border:          #1D2730;  // Border color
+
+@color-input:           #314354;  // Input color
+
+@color-success:         #49B52A;
+@color-danger:          #FF6363;
+@color-warning:         #ff9900;
+@color-info:            blue;
+
+// TYPOGRAPHY
+@font-family-base: 'Roboto Condensed', sans-serif;
+@font-size-base: 16px;
+
+// HEADLINES
+@font-family-h1: 'Roboto Condensed', sans-serif;
+//@font-size-h1: 1.665em;
+@font-family-h2: 'Roboto Condensed', sans-serif;
+//@font-size-h2: 1.5em;
+@font-family-h3: 'Roboto Condensed', sans-serif;
+//@font-size-h3: 1.3em;
+@font-family-h4: 'Roboto Condensed', sans-serif;
+//@font-size-h4: 1.2em;
+@font-family-h5: 'Roboto Condensed', sans-serif;
+//@font-size-h5: 1.1em;
+
+// font-size calculation (from twitter bootstrap)
+//@font-size-base: 14px;
+@font-size-large: ceil((@font-size-base * 1.25));
+// ~18px
+@font-size-small: ceil((@font-size-base * 0.80));
+// ~12px
+
+@font-size-h1: floor((@font-size-base * 2.6));
+// ~36px
+@font-size-h2: floor((@font-size-base * 2.15));
+// ~30px
+@font-size-h3: ceil((@font-size-base * 1.7));
+// ~24px
+@font-size-h4: ceil((@font-size-base * 1.25));
+// ~18px
+@font-size-h5: @font-size-base;
+@font-size-h6: ceil((@font-size-base * 0.85));
+// ~12px
+
+@border-radius-base: 5px;
+@border-radius-button: @border-radius-base;
+@border-radius-box: @border-radius-base;
+
+// BOXES
+@box-padding-base: 20px;
+@box-shadow-color: rgba(0,0,0,.2);
+@box-shadow-base: @box-shadow-color 0 0px 10px;
+@box-heading-bg-color: #f3f3f3;
+@box-heading-color: inherit;
+@box-background: transparent;
+@box-header-background: @box-heading-bg-color;
+@box-border-base: inherit;
+//@box-shadow-base: #F2F5F6 0 10px 25px;
+
+// CARDS
+@card-padding-base: 20px;
+@card-shadow-base: rgba(0,0,0,0.1) 0 10px 25px;
+
+// SIDEBAR
+@sidebar-width: 240px;
+@sidebar-bg-color: #fffefe;
+@sidebar-text-color: #333;
+@sidebar-separator-color: @sidebar-text-color;
+
+
+// MIX-INS
+.font-primary {
+  font-family: @font-family-base;
+}

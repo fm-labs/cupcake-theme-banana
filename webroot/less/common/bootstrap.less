@@ -1,0 +1,139 @@
+// BOOTSTRAP OVERRIDES
+
+
+// T A B L E
+.table > thead > tr > th {
+  font-weight: bold;
+}
+
+//.table > tbody > tr:first-child > td,
+.table > thead > tr > th {
+  border-top: none;
+  border-bottom: none;
+}
+
+.table > thead > tr > th > .desc {
+  &::after {
+    content: "\2193"
+  }
+}
+
+.table > thead > tr > th > .asc {
+  &::after {
+    content: "\2191"
+  }
+}
+
+.table.table-hover > tbody > tr:HOVER > td {
+  background-color: @color-lightgray;
+}
+
+.table.table-vertical {
+  tr > td:first-child {
+    font-weight: bold;
+    width: 25%;
+    min-width: 200px;
+  }
+}
+
+
+
+// L A B E L S
+.label {
+  line-height: inherit;
+  font-weight: normal;
+}
+
+// T A B S
+.tabs {
+  .nav-tabs {
+    border-bottom: 1px solid @color-lightgray;
+    margin-bottom: 40px;
+  }
+
+  .nav-tabs > li > a {
+    color: @color-text;
+    border: none;
+    background-color: transparent;
+    border-bottom: 4px solid transparent;
+    opacity: 0.5; // @todo cross browser
+  }
+
+  .nav-tabs > li > a:hover {
+    //border-bottom-color: @color-link;
+    opacity: 1; // @todo cross browser
+  }
+
+  .nav-tabs > li.active > a,
+  .nav-tabs > li.active > a:hover,
+  .nav-tabs > li.active > a:focus {
+    color: @color-link;
+    background-color: transparent;
+    border-width: 0 0 4px 0;
+    border-bottom-color: @color-link;
+    //border-bottom-color: rgb(221, 221, 221);
+    //border-bottom-color: transparent;
+    opacity: 1; // @todo cross browser
+    cursor: default;
+  }
+
+  //.nav-tabs > li > a.danger,
+  .nav-tabs > li > a.danger:hover,
+  .nav-tabs > li.active a.danger,
+  .nav-tabs > li.active a.danger:hover,
+  .nav-tabs > li.active a.danger:focus, {
+    color: @color-danger;
+    border-bottom-color: @color-danger;
+  }
+
+  > .tab-content {
+  }
+}
+
+// Modals
+.modal .modal-dialog {
+  width: 50%;
+  max-width: 96%;
+}
+
+.modal-lg .modal-dialog,
+.modal .modal-dialog-lg {
+  width: 80%;
+}
+
+.modal-wide .modal-dialog,
+.modal .modal-dialog-wide {
+  width: 96%;
+}
+
+
+.modal .modal-header.modal-header-image {
+  padding: 0;
+}
+
+.modal .modal-body h3,
+.modal .modal-body .heading {
+  margin-top: 30px;
+  font-family: @font-family-base;
+  font-size: 25px;
+  line-height: 30px;
+  color: @color-text;
+  text-align: center;
+}
+
+.modal .modal-body p,
+.modal .modal-body .text {
+  font-size: 16px;
+  line-height: 25px;
+  color: @color-text;
+  text-align: center;
+}
+
+.modal .modal-footer {
+  border-top: none;
+}
+
+// ALERTS
+.alert {
+  border-radius: 0 !important;
+}

@@ -1,0 +1,91 @@
+@import "variables";
+
+.btn {
+  border: none;
+  border-radius: @border-radius-button;
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: 1em;
+  font-weight: normal;
+  padding: 15px 25px;
+  display: inline;
+  color: #000;
+  text-decoration: none;
+  background-color: #CCC;
+
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: rgba(0,0,0,.2) 2px 2px 4px;
+    //box-shadow: rgba(0,0,0,0.2) 0 10px 25px;
+  }
+
+  &.btn-block {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+.btn-big {
+  padding: 20px 35px;
+}
+
+.btn-small {
+  padding: 9px 15px;
+}
+
+.btn-wide {
+  width: 50%;
+  max-width: 320px;
+}
+
+.btn.has-icon {
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  text-align: left;
+}
+
+.btn-default {
+  background-color: @color-lightgray;
+  color: @color-text;
+}
+
+.btn-primary {
+  background-color: @color-link;
+  color: @color-highlight;
+
+  &:hover {
+    //background-color: @color-link-highlight;
+    color: @color-highlight;
+  }
+}
+
+.btn-danger {
+  background-color: @color-danger;
+  color: @color-highlight;
+
+  &:hover {
+    //background-color: @color-danger;
+    //color: @color-highlight;
+  }
+}
+
+.btn-dark {
+  background-color: @color-text;
+  color: @color-highlight;
+}
+
+.btn-light {
+  background-color: transparent;
+  color: @color-highlight;
+  border: 2px solid @color-highlight;
+
+  &:hover {
+    background-color: @color-highlight;
+    color: @color-danger;
+  }
+}

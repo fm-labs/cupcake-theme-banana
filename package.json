@@ -1,0 +1,29 @@
+{
+  "name": "cakephp-theme-banana",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fm-labs/cakephp-theme-banana.git"
+  },
+  "author": "fm-labs <flowmotionlabs@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fm-labs/cakephp-theme-banana/issues"
+  },
+  "homepage": "https://github.com/fm-labs/cakephp-theme-banana#readme",
+  "private": true,
+  "dependencies": {
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "~2.0.0",
+    "grunt-contrib-watch": "~1.1.0"
+  }
+}

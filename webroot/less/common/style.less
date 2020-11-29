@@ -1,0 +1,168 @@
+@import "variables";
+
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  font-weight: normal;
+  color: @color-second;
+  background-color: @color-bg-body;
+}
+
+.container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1, .h1 {
+  font-family: @font-family-h1;
+  font-size: @font-size-h1;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @color-primary;
+  margin-bottom: 20px;
+  word-wrap: break-word;
+  word-break: normal;
+}
+
+h2, .h2 {
+  font-family: @font-family-h2;
+  font-size: @font-size-h2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @color-primary;
+  margin-bottom: 18px;
+}
+
+h3, .h3 {
+  font-family: @font-family-h3;
+  font-size: @font-size-h3;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @color-primary;
+  margin-bottom: 16px;
+}
+
+h4, .h4 {
+  font-family: @font-family-h4;
+  font-size: @font-size-h4;
+  font-weight: 300;
+  color: @color-primary;
+  margin-bottom: 1em;
+}
+
+h5, .h5 {
+  font-family: @font-family-h5;
+  font-size: @font-size-h5;
+  font-weight: 300;
+  color: @color-primary;
+  margin-bottom: 0.5em;
+}
+
+a, .link {
+  color: @color-link;
+  text-decoration: none;
+
+  &:hover {
+    color: @color-link-highlight;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+small {
+  font-size: 80%;
+}
+
+p {
+  line-height: 25px; //@todo use variable
+  margin-bottom: 25px;
+}
+
+// I M A G E S
+img {
+  max-width: 100%;
+}
+
+div.image {}
+
+div.image-rounded,
+div.image-rounded img,
+img.image-rounded {
+  border-radius: @border-radius-base;
+}
+
+// T E X T
+.text-primary {
+  color: @color-primary;
+}
+
+.text-second {
+  color: @color-second;
+}
+
+.text-third {
+  color: @color-third;
+}
+
+.text-success, .text-ok {
+  color: @color-success !important;
+}
+
+.text-error, .text-danger {
+  color: @color-danger !important;
+}
+
+.text-warning {
+  color: #ff9900;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-1x {
+  font-size: @font-size-base;
+  line-height: @font-size-base;
+}
+
+.text-2x {
+  font-size: @font-size-base * 2;
+  line-height: @font-size-base * 2;
+}
+
+.text-3x {
+  font-size: @font-size-base * 3;
+  line-height: @font-size-base * 3;
+}
+
+.text-4x {
+  font-size: @font-size-base * 4;
+  line-height: @font-size-base * 4;
+}
+
+// Money
+.money {
+  &.money-pos {
+    .text-success();
+  }
+
+  &.money-neg {
+    .text-error();
+  }
+}

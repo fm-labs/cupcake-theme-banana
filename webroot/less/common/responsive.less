@@ -1,0 +1,52 @@
+
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+
+
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .text-left-xs { .text-left() }
+  .text-right-xs { .text-right() }
+  .text-center-xs { .text-center() }
+  .btn-block-xs { display: block !important; width: 100% !important; max-width: 100% !important; }
+
+  .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .box {
+    box-shadow: none !important;
+
+    .box-header, .box-body {
+      padding: 10px !important;
+    }
+  }
+
+}
+
+/*  Small devices (Tablets, ≥768px) */
+@media only screen and (min-width: 768px) {
+  .text-left-sm { .text-left() }
+  .text-right-sm { .text-right() }
+  .text-center-sm { .text-center() }
+}
+
+/* Medium devices, (Desktops, ≥992px) */
+@media only screen and (min-width: 992px) {
+  .text-left-md { .text-left() }
+  .text-right-md { .text-right() }
+  .text-center-md { .text-center() }
+
+  form input.form-control {
+    max-width: 400px;
+  }
+}
+
+/* Large devices, (Desktops, ≥1200px) */
+@media only screen and (min-width: 1200px) {
+  .text-left-lg { .text-left() }
+  .text-right-lg { .text-right() }
+  .text-center-lg { .text-center() }
+}

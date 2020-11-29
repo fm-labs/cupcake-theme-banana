@@ -1,0 +1,51 @@
+@import "variables";
+
+.box {
+  box-shadow: @box-shadow-base;
+  margin-bottom: @box-padding-base * 2;
+  border-radius: @border-radius-base;
+
+  .box-header,
+  .box-footer {
+    background-color: @box-heading-bg-color;
+    color: @box-heading-color;
+    padding: @box-padding-base;
+    font-weight: 700;
+  }
+
+  .box-body {
+    padding: @box-padding-base;
+
+    table {
+      //margin: 0;
+    }
+  }
+
+  .box-footer {
+  }
+}
+
+
+.box-default {
+}
+
+.box-success {
+  .box-header {
+    color: @color-success;
+    border-top: 2px solid @color-success;
+  }
+}
+
+.box-danger {
+  .box-header {
+    color: @color-danger;
+    border-top: 2px solid @color-danger;
+  }
+}
+
+.box-warning {
+  .box-header {
+    color: @color-warning;
+    border-top: 2px solid @color-warning;
+  }
+}

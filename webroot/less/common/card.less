@@ -1,0 +1,83 @@
+@import "variables";
+
+.card {
+  box-shadow: @card-shadow-base;
+  margin-bottom: @card-padding-base * 3;
+  position: relative;
+  border-radius: @border-radius-base;
+  overflow: hidden;
+}
+
+.card-default {
+  .card-heading {
+    position: absolute;
+    padding: @card-padding-base/2 @card-padding-base;
+    color: #FFF;
+  }
+
+  .card-body {
+    padding: @card-padding-base*3 @card-padding-base @card-padding-base @card-padding-base;
+    background-color: #88C7EA;
+    color: #FFF;
+    height: 200px;
+
+    h3 {
+      color: #FFF;
+      margin-bottom: @card-padding-base;
+    }
+  }
+
+  .card-image,
+  .card-body.image {
+    padding: 0 0 0 0;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+      max-width: none;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .card-footer {
+    padding: @card-padding-base @card-padding-base @card-padding-base @card-padding-base;
+  }
+}
+
+.card-wide {
+  overflow: hidden;
+  max-height: 300px;
+
+  .card-heading {
+    position: absolute;
+    padding: @card-padding-base/2 @card-padding-base;
+    color: #FFF;
+    z-index: 1000;
+  }
+
+  .card-image {
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      max-width: none;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .card-body {
+    margin-left: 50%;
+    padding: @card-padding-base;
+
+    background-color: #FFF;
+    color: @color-text;
+  }
+
+  h3 {
+    color: @color-text;
+    margin-bottom: @card-padding-base;
+  }
+}
