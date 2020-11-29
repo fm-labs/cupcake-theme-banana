@@ -1,0 +1,28 @@
+{
+    "name": "fm-labs/cupcake-theme-banana",
+    "type": "cakephp-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "fm-labs",
+            "email": "flowmotionlabs@gmail.com"
+        }
+    ],
+    "require": {
+        "cakephp/cakephp": "^4.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Cake\\": "./vendor/cakephp/cakephp/src",
+            "ThemeBanana\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests",
+            "ThemeBanana\\Test\\": "tests"
+        }
+    }
+}
