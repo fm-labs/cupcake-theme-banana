@@ -29,7 +29,9 @@
 
     <main id="main" class="main">
         <div id="main-flash" class="flash container">
-            <?= $this->fetch('flash', (string)$this->Flash->render()); ?>
+            <?= $this->Flash->render(); ?>
+            <?= $this->Flash->render('auth'); ?>
+            <?= $this->fetch('flash'); ?>
         </div>
         <div id="main-content" class="content container">
             <?= $this->fetch('content'); ?>

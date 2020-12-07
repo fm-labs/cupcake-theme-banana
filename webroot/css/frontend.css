@@ -1,4 +1,4 @@
-/** cakephp-theme-alpha - v0.0.1 **/
+/** cupcake-theme-banana - v0.1.0 **/
 .font-primary {
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -1086,6 +1086,7 @@ p {
   width: 100%;
   position: fixed;
   bottom: 0;
+  z-index: 9999;
 }
 .footer .footer-1 {
   background-color: #1D2730;

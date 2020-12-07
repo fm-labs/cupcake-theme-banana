@@ -1,5 +1,5 @@
 <?php
-$this->extend('base');
+$this->extend('/base');
 $this->assign('title', __('Password recovery'));
 $form = $this->get('form');
 ?>

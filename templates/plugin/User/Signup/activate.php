@@ -1,5 +1,5 @@
 <?php
-$this->extend('base');
+$this->extend('/base');
 $this->assign('title', __('Activate account'));
 ?>
 <div class="view-auth">
