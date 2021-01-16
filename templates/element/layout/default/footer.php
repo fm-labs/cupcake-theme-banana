@@ -1,6 +1,6 @@
 <div class="footer-1">
     <div class="container">
-        <?= $this->element('layout/default/footer/footer_panel'); ?>
+        <?= $this->element('ThemeBanana.layout/default/footer/footer_panel'); ?>
     </div>
 </div>
 
@@ -16,7 +16,7 @@
             </div>
             <div class="col-xs-12 col-sm-8 col-md-9 text-right">
                 <div class="text-right text-center-xs">
-                    <?= $this->element('layout/default/footer/footer_nav'); ?>
+                    <?= $this->element('ThemeBanana.layout/default/footer/footer_nav'); ?>
                 </div>
             </div>
         </div>

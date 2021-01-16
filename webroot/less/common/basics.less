@@ -5,6 +5,46 @@
   box-sizing: border-box;
 }
 
+// Clearfix
 .clearfix {
   clear: both;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// Sticky container
+// https://www.w3schools.com/howto/howto_css_sticky_element.asp
+.sticky-top {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+.sticky-bottom {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+
+// Fixed container
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+// Equal-height container
+// https://www.w3schools.com/howto/howto_css_equal_height.asp
+.equal-height {
+  display: table-cell;
 }

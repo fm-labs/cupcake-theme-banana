@@ -24,13 +24,16 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'webroot/css/dashboard.css': [
-                    'webroot/less/dashboard.less'
+                        'webroot/less/dashboard.less'
                     ],
                     'webroot/css/login.css': [
-                    'webroot/less/login.less'
+                        'webroot/less/login.less'
                     ],
                     'webroot/css/frontend.css': [
-                    'webroot/less/frontend.less'
+                        'webroot/less/frontend.less'
+                    ],
+                    'webroot/css/common.css': [
+                        'webroot/less/common.less'
                     ]
                 }
             },
@@ -45,13 +48,16 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'webroot/css/dashboard.min.css': [
-                    'webroot/less/dashboard.less'
+                        'webroot/less/dashboard.less'
                     ],
                     'webroot/css/login.min.css': [
-                    'webroot/less/login.less'
+                        'webroot/less/login.less'
                     ],
                     'webroot/css/frontend.min.css': [
-                    'webroot/less/frontend.less'
+                        'webroot/less/frontend.less'
+                    ],
+                    'webroot/css/common.min.css': [
+                        'webroot/less/common.less'
                     ]
                 }
             }
@@ -60,8 +66,8 @@ module.exports = function (grunt) {
         watch: {
             assets: {
                 files: [
-                'webroot/less/*.less',
-                'webroot/less/**/*.less'
+                    'webroot/less/*.less',
+                    'webroot/less/**/*.less'
                 ],
                 tasks: ['clean:less', 'less'],
                 options: {

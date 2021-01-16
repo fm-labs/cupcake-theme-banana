@@ -252,6 +252,36 @@ table {
 .clearfix {
   clear: both;
 }
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.sticky-top {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+}
+.sticky-bottom {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.equal-height {
+  display: table-cell;
+}
 body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;

@@ -1,3 +1,8 @@
+<?php
+/**
+ * @var \Cake\View\View $this;
+ */
+?>
 <!DOCTYPE html>
 <html lang="<?= Cake\I18n\I18n::getLocale(); ?>">
 <head>
@@ -11,20 +16,21 @@
     <?= $this->fetch('meta'); ?>
 
     <?= $this->Html->css('/libs/bootstrap/css/bootstrap'); ?>
+    <?= $this->Html->css('common'); ?>
     <?= $this->Html->css('frontend'); ?>
     <?= $this->fetch('css'); ?>
 
     <?= $this->Html->script('/libs/jquery/jquery.min'); ?>
     <?= $this->Html->script('/libs/jquery.scrollto/jquery.scrollTo.min'); ?>
     <?= $this->fetch('headjs'); ?>
-
+    <?= $this->fetch('head'); ?>
     <?= $this->fetch('google_analytics'); ?>
 </head>
 <body>
 <?= $this->fetch('top'); ?>
 <div class="wrapper">
     <header id="page-header" class="header top-header">
-        <?= $this->fetch('header', $this->element('layout/default/header')); ?>
+        <?= $this->fetch('header', $this->element('ThemeBanana.layout/default/header')); ?>
     </header>
 
     <main id="main" class="main">
@@ -38,8 +44,8 @@
         </div>
     </main>
 
-    <footer id="page-footer" class="footer">
-        <?= $this->fetch('footer', $this->element('layout/default/footer')); ?>
+    <footer id="page-footer" class="footer fixed-bottom">
+        <?= $this->fetch('footer', $this->element('ThemeBanana.layout/default/footer')); ?>
     </footer>
 </div>
 <?= $this->fetch('bottom'); ?>
