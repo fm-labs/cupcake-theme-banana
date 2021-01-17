@@ -69,7 +69,7 @@ module.exports = function (grunt) {
                     'webroot/less/*.less',
                     'webroot/less/**/*.less'
                 ],
-                tasks: ['clean:less', 'less'],
+                tasks: [/*'clean:less',*/ 'less'],
                 options: {
                     spawn: false
                 }
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
   // These plugins provide necessary tasks.
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    //grunt.loadNpmTasks('grunt-contrib-clean');
 
   // Default task.
     grunt.registerTask('default', ['less']);

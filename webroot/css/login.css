@@ -422,6 +422,82 @@ img.image-rounded {
 .money.money-neg {
   color: #FF6363 !important;
 }
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .text-left-xs {
+    text-align: left;
+  }
+  .text-right-xs {
+    text-align: right;
+  }
+  .text-center-xs {
+    text-align: center;
+  }
+  .btn-block-xs {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  .container-fluid {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .box {
+    box-shadow: none !important;
+  }
+  .box .box-header,
+  .box .box-body {
+    padding: 10px !important;
+  }
+}
+/*  Small devices (Tablets, ≥768px) */
+@media only screen and (min-width: 768px) {
+  .text-left-sm {
+    text-align: left;
+  }
+  .text-right-sm {
+    text-align: right;
+  }
+  .text-center-sm {
+    text-align: center;
+  }
+}
+/* Medium devices, (Desktops, ≥992px) */
+@media only screen and (min-width: 992px) {
+  .text-left-md {
+    text-align: left;
+  }
+  .text-right-md {
+    text-align: right;
+  }
+  .text-center-md {
+    text-align: center;
+  }
+  form input.form-control {
+    max-width: 400px;
+  }
+}
+/* Large devices, (Desktops, ≥1200px) */
+@media only screen and (min-width: 1200px) {
+  .text-left-lg {
+    text-align: left;
+  }
+  .text-right-lg {
+    text-align: right;
+  }
+  .text-center-lg {
+    text-align: center;
+  }
+}
 form fieldset legend {
   font-weight: bold;
 }
@@ -596,82 +672,6 @@ div.checkbox .checkmark:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-}
-.text-left {
-  text-align: left;
-}
-.text-right {
-  text-align: right;
-}
-.text-center {
-  text-align: center;
-}
-/* Extra small devices (phones, 768px and down) */
-@media only screen and (max-width: 768px) {
-  .text-left-xs {
-    text-align: left;
-  }
-  .text-right-xs {
-    text-align: right;
-  }
-  .text-center-xs {
-    text-align: center;
-  }
-  .btn-block-xs {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-  .container-fluid {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-  }
-  .box {
-    box-shadow: none !important;
-  }
-  .box .box-header,
-  .box .box-body {
-    padding: 10px !important;
-  }
-}
-/*  Small devices (Tablets, ≥768px) */
-@media only screen and (min-width: 768px) {
-  .text-left-sm {
-    text-align: left;
-  }
-  .text-right-sm {
-    text-align: right;
-  }
-  .text-center-sm {
-    text-align: center;
-  }
-}
-/* Medium devices, (Desktops, ≥992px) */
-@media only screen and (min-width: 992px) {
-  .text-left-md {
-    text-align: left;
-  }
-  .text-right-md {
-    text-align: right;
-  }
-  .text-center-md {
-    text-align: center;
-  }
-  form input.form-control {
-    max-width: 400px;
-  }
-}
-/* Large devices, (Desktops, ≥1200px) */
-@media only screen and (min-width: 1200px) {
-  .text-left-lg {
-    text-align: left;
-  }
-  .text-right-lg {
-    text-align: right;
-  }
-  .text-center-lg {
-    text-align: center;
-  }
 }
 .btn {
   border: none;

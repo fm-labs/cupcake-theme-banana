@@ -26,17 +26,12 @@ class Plugin extends BasePlugin implements EventListenerInterface
         Menu::setConfig('primary', [
             'className' => function () {
                 return [
-                    /*
-                    [
-                        'title' => 'Foo',
-                        'url' => '#',
-                    ],
-                    */
+        /*
                     [
                         'title' => 'Home',
                         'url' => '/',
-                        'target' => '_blank',
                     ],
+        */
                 ];
             },
         ]);
@@ -45,16 +40,6 @@ class Plugin extends BasePlugin implements EventListenerInterface
                 return [
                     /*
                     [
-                        'title' => 'Bar',
-                        'url' => '#',
-                    ],
-                    */
-                    [
-                        'title' => 'flowmotion-labs.net',
-                        'url' => 'https://flowmotion-labs.net',
-                        'target' => '_blank',
-                    ],
-                    [
                         'title' => 'Imprint',
                         'url' => ['_name' => 'content:page:imprint'],
                     ],
@@ -62,12 +47,15 @@ class Plugin extends BasePlugin implements EventListenerInterface
                         'title' => 'Privacy',
                         'url' => ['_name' => 'content:page:privacy'],
                     ],
+                    */
                 ];
             },
         ]);
+        /*
         Configure::write('ThemeBanana.Ui.Header.Screen.menuName', 'primary');
         Configure::write('ThemeBanana.Ui.Header.Mobile.menuName', 'primary');
         Configure::write('ThemeBanana.Ui.Footer.Nav.menuName', 'footer');
+        */
     }
 
     /**

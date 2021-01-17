@@ -1,24 +1,19 @@
 <?php
+declare(strict_types=1);
+
+/**
+ * @var \Cake\View\View $this
+ */
+$menuKey = Cake\Core\Configure::read('ThemeBanana.Ui.Header.Nav.menuName', 'primary');
+$menu = \Cupcake\Menu\Menu::get($menuKey);
+
 $this->loadHelper('Cupcake.Menu');
-/*
-$menu = new \Cupcake\Menu\Menu();
-$menu->addItem('Home', '/');
-$menu->addItem('New features', '#');
-$menu->addItem('Press', '#');
-$menu->addItem('New hires', '#');
-$menu->addItem('About', '#');
-*/
-$menu = \Cupcake\Menu\Menu::get(Cake\Core\Configure::read('ThemeBanana.Ui.Header.Screen.menuName'));
 ?>
 <div class="header-screen container">
     <div class="row">
         <div class="col-md-4">
             <div class="top-header-logo">
-                <?=
-                $this->Html->image(
-                    'brand/logo/logo-hybrid.svg',
-                    ['height' => '75', 'url' => '/']
-                ); ?>
+                <?= $this->element('layout/default/header/logo'); ?>
             </div>
         </div>
         <div class="col-md-8">

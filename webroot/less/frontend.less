@@ -1,28 +1,39 @@
-@import "common/variables.less";
+@import "variables.less";
 @import "mixins/mix.less";
-//// styles
-////@import "common/reset";
-//@import "common/normalize";
-//@import "common/fonts";
-//@import "common/bootstrap";
-//@import "common/basics";
-//@import "common/style";
-//@import "common/form.less";
-//@import "common/responsive";
-//// styles
-//@import "common/button";
-//@import "common/navigation";
-//@import "common/icon";
 
-html, body {
-    //overflow-y: hidden;
+/**
+ * CSS VARS
+ */
+:root {
+    --header-height: 75px;
+    --header-bg-color: #1D2730;
+    --footer-bg-color: #141C23;
+    --section-alt-bg-color: #1D2730;
+    --section-alt-color: #1D2730;
 }
 
+/**
+ * LAYOUT
+ */
 body {
-    padding-top: 75px; // navigation-height offset
-    padding-bottom: 150px;
+    padding-bottom: calc(var(--header-height) * 2);
 }
 
+body.fixed-header {
+    padding-top: var(--header-height); // navigation-height offset
+}
+
+.wrapper {
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/**
+ * GENERAL STYLING
+ */
 h3, .h3 {
     font-size: 25px;
     font-weight: 700;
@@ -37,12 +48,45 @@ p {
     line-height: 1.5625em; // 25px (/16)
 }
 
-.maintenance-notice {
-    top: 75px;
+/**
+ * BUTTONS
+ */
+.btn-more {
+    min-width: 250px;
+    max-width: 320px;
+    margin-top: 20px;
+}
+
+/**
+ * HEADER
+ */
+.top-header {
+    background-color: var(--header-bg-color);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 25px;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    opacity: 1; //@todo cross browser mixin
+    z-index: 10000;
+
+    .top-header-nav {
+        margin-top: 20px;
+        text-align: right;
+
+        ul li a:not(.btn) {
+            padding: 5px 10px;
+        }
+    }
+}
+
+.header-logo {
+    img {
+        max-height: var(--header-height);
+    }
 }
 
 .header-mobile {
-    background: #1D2730;
+    background: var(--header-bg-color);
 
     .mobile-menu-trigger {
         padding: 15px;
@@ -116,49 +160,9 @@ p {
     }
 }
 
-
-.btn-more {
-    min-width: 250px;
-    max-width: 320px;
-    margin-top: 20px;
-}
-
-.wrapper {
-    //  height: 100%;
-    //  position: relative;
-    //  overflow-x: hidden;
-    //  overflow-y: auto;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.top-header {
-    background-color: #1D2730;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 10px 25px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 75px;
-    opacity: 1; //@todo cross browser mixin
-    z-index: 10000;
-
-    .top-header-logo {
-
-    }
-
-    .top-header-nav {
-        margin-top: 20px;
-        text-align: right;
-
-        ul li a:not(.btn) {
-            padding: 5px 10px;
-        }
-    }
-}
-
+/**
+ * CONTENT SECTION
+ */
 .main {
     //min-height: 500px;
     position: relative;
@@ -190,11 +194,14 @@ p {
 }
 
 
+/**
+ * FOOTER
+ */
 .footer {
     z-index: 9999;
 
     .footer-1 {
-        background-color: #1D2730;
+        background-color: var(--header-bg-color);
         padding: 20px 0;
 
         h3 {
@@ -208,7 +215,7 @@ p {
     }
 
     .footer-2 {
-        background-color: #141C23;
+        background-color: var(--footer-bg-color);
         padding: 20px 0;
 
         ul.nav-horizontal {
@@ -242,6 +249,9 @@ p {
     }
 }
 
+/**
+ * SECTIONS
+ */
 .section {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -275,7 +285,7 @@ p {
 }
 
 .section-alt {
-    background-color: #1D2730;
+    background-color: var(--header-bg-color);
 
     h1, h2, h3 {
         color: @color-highlight;
@@ -292,7 +302,16 @@ p {
     }
 }
 
-// RESPONSIVE media queries (compatible with bootstrap3)
+/**
+ * MISC
+ */
+.maintenance-notice {
+    top: var(--header-height);
+}
+
+/**
+ * RESPONSIVE media queries (compatible with bootstrap3)
+ */
 /* Extra small devices (phones, 768px and down) */
 @media only screen and (max-width: 768px) {
 
