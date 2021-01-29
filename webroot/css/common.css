@@ -243,6 +243,15 @@ table {
 .alert {
   border-radius: 0 !important;
 }
+/* Extra small devices (phones, 768px and down) */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+/*  Small devices (Tablets, ≥768px) */
+/* Medium devices, (Desktops, ≥992px) */
+/* Large devices, (Desktops, ≥1200px) */
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
@@ -421,6 +430,42 @@ img.image-rounded {
 }
 .money.money-neg {
   color: #FF6363 !important;
+}
+/** Normalize DATE INPUTS **/
+/* Removes the clear button from date inputs */
+input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+/* Removes the spin button */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+/* Always display the drop down caret */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  /*color: #2c3e50;*/
+}
+/* A few custom styles for date inputs */
+input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  /*color: #95a5a6;*/
+  /* font-size: 18px;*/
+  border: 1px solid #fafafa;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-color: #C1C1C1;
+  background: #fafafa;
+  padding: 10px 5px;
+  display: inline-block !important;
+  visibility: visible !important;
+}
+input[type="date"],
+input[type="date"]:focus {
+  /*color: #95a5a6;*/
+  border-color: #C1C1C1;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
 }
 .text-left {
   text-align: left;
@@ -1356,6 +1401,19 @@ form.form-horizontal .form-group.select .control-label {
 }
 form.form-centered .form-control {
   text-align: center;
+}
+form div.input-checkbox label > input {
+  margin: 5px 5px 0 0;
+}
+form div.checkbox-wrapper > label {
+  display: inline-block;
+  margin: 5px 0;
+}
+form div.checkbox-wrapper > label > input {
+  margin: 5px 5px 0 0;
+}
+form .select2-container {
+  max-width: 400px;
 }
 /* Extra small devices (phones, 768px and down) */
 /*  Small devices (Tablets, ≥768px) */

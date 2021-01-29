@@ -2,47 +2,47 @@
 return ['Settings' => [
     'ThemeBanana' => [
         'groups' => [
-            'Theme.Ui.Logo' => [
+            'Logo' => [
                 'label' => __('Logo'),
             ],
-            'Theme.Ui.Header' => [
+            'Header' => [
                 'label' => __('Header'),
             ],
-            'Theme.Ui.Footer' => [
+            'Footer' => [
                 'label' => __('Footer'),
             ],
-            'Theme.Ui.Fonts' => [
+            'Fonts' => [
                 'label' => __('Fonts'),
             ],
         ],
         'schema' => [
-            'Theme.Ui.Logo.imgUrl' => [
+            'Logo.imgUrl' => [
                 'label' => __('Logo image url'),
-                'group' => 'Theme.Ui.Logo',
+                'group' => 'Logo',
                 'help' => 'Logo image path or url',
                 'default' => null,
             ],
-            'Theme.Ui.Logo.url' => [
+            'Logo.url' => [
                 'label' => __('Logo link url'),
-                'group' => 'Theme.Ui.Logo',
+                'group' => 'Logo',
                 'help' => 'Logo link url',
                 'default' => null,
             ],
-            'Theme.Ui.Logo.height' => [
+            'Logo.height' => [
                 'label' => __('Logo image height'),
-                'group' => 'Theme.Ui.Logo',
+                'group' => 'Logo',
                 'help' => 'in pixels',
                 'default' => null,
             ],
-            'Theme.Ui.Logo.width' => [
+            'Logo.width' => [
                 'label' => __('Logo image width'),
-                'group' => 'Theme.Ui.Logo',
+                'group' => 'Logo',
                 'help' => 'in pixels',
                 'default' => null,
             ],
-            'Theme.Ui.Header.Screen.menuName' => [
+            'Header.Screen.menuName' => [
                 'label' => __('Header menu for screens'),
-                'group' => 'Theme.Ui.Header',
+                'group' => 'Header',
                 'help' => 'Header menu',
                 'default' => 'primary',
                 'input' => [
@@ -50,9 +50,9 @@ return ['Settings' => [
                     'options' => \Cupcake\Menu\Menu::configured(),
                 ],
             ],
-            'Theme.Ui.Header.Mobile.menuName' => [
+            'Header.Mobile.menuName' => [
                 'label' => __('Header menu for mobile'),
-                'group' => 'Theme.Ui.Header',
+                'group' => 'Header',
                 'help' => 'Header menu',
                 'default' => 'primary',
                 'input' => [
@@ -60,14 +60,14 @@ return ['Settings' => [
                     'options' => \Cupcake\Menu\Menu::configured(),
                 ],
             ],
-            'Theme.Ui.Footer.noticeText' => [
+            'Footer.noticeText' => [
                 'label' => __('Footer notice text'),
-                'group' => 'Theme.Ui.Footer',
+                'group' => 'Footer',
                 'default' => '',
             ],
-            'Theme.Ui.Footer.Nav.menuName' => [
+            'Footer.Nav.menuName' => [
                 'label' => __('Footer menu'),
-                'group' => 'Theme.Ui.Footer',
+                'group' => 'Footer',
                 'help' => 'Footer menu',
                 'default' => 'footer',
                 'input' => [

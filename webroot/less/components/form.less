@@ -1,3 +1,5 @@
+@import "../variables.less";
+
 form {
 }
 
@@ -133,4 +135,25 @@ form.form-centered {
     text-align: center;
   }
 
+}
+
+// CHECKBOX
+form div.input-checkbox {
+   label > input {
+    margin: 5px 5px 0 0;
+  }
+}
+
+// CHECKBOX MULTI-SELECT
+form div.checkbox-wrapper > label {
+  display: inline-block;
+  margin: 5px 0;
+}
+form div.checkbox-wrapper > label > input {
+  margin: 5px 5px 0 0;
+}
+
+// SELECT2
+form .select2-container {
+  max-width: 400px;
 }

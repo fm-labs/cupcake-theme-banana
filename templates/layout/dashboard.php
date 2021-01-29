@@ -1,51 +1,21 @@
 <?php $this->loadHelper('Breadcrumbs'); ?>
+<?php $this->Html->css('dashboard.min', ['block' => true]); ?>
 <!DOCTYPE html>
 <html lang="<?= Cake\I18n\I18n::getLocale(); ?>">
 <head>
     <?= $this->Html->charset() ?>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="robots" content="noindex,nofollow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <?= $this->Html->meta('icon') ?>
     <title><?= $this->fetch('title'); ?></title>
-    <?= $this->fetch('meta'); ?>
-
-    <?= $this->Html->css('bootstrap'); ?>
-    <?= $this->fetch('css'); ?>
-    <?= $this->Html->css('dashboard.min.css'); ?>
-    <!--
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-    or
-    <style>
-    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
-    </style>
-    -->
-    <?= $this->Html->script('jquery-2.2.4.min.js'); ?>
-    <?= $this->Html->script('bootstrap.js'); ?>
-    <?= $this->fetch('headjs'); ?>
-    <?= $this->fetch('google_analytics'); ?>
+    <?= $this->element('layout/head'); ?>
 </head>
-<body>
+<body class="has-sidebar">
 <div id="wrapper">
 
     <?= $this->element('Dashboard/sidebar'); ?>
 
     <div id="content">
-        <?php //echo $this->element('Dashboard/search'); ?>
-
-        <?php if ($this->fetch('breadcrumbs')) : ?>
-            <?= $this->fetch('breadcrumbs'); ?>
-        <?php else : ?>
-        <div id="breadcrumbs">
-            <nav>
-            <?php
-            $this->Breadcrumbs->prepend(__('Dashboard'), '/');
-            echo $this->Breadcrumbs->render(['class' => 'nav-horizontal'], ['separator' => '&nbsp;>&nbsp;', 'class' => 'separator-item', 'innerAttrs' => ['class' => 'separator']]);
-            ?>
-            </nav>
-        </div>
-        <?php endif; ?>
+        <?= $this->element('Dashboard/user_notice'); ?>
+        <?= $this->element('Dashboard/breadcrumbs'); ?>
+        <?= $this->element('Dashboard/search'); ?>
 
         <div id="header">
             <?php echo $this->fetch('header'); ?>
@@ -56,12 +26,6 @@
         </div>
 
         <main id="main" class="container-fluid">
-            <?php
-            /**
-             * User dashboard notice
-             */
-            echo $this->element('Dashboard/user_notice');
-            ?>
 
             <div id="flash-messages">
                 <?php echo $this->Flash->render(); ?>
@@ -78,14 +42,14 @@
         <?php endif; ?>
 
         <footer id="footer" class="container-fluid">
-            <?= $this->element('Layout/footer_nav'); ?>
+            <?= $this->element('layout/footer'); ?>
         </footer>
 
     </div>
 
 </div>
 <?= '' // $this->element('Layout/scripts'); ?>
-<?= '' // $this->Html->script('sportunion'); ?>
+<?= '' // $this->Html->script('theme_banana'); ?>
 <?= $this->fetch('script'); ?>
 <script>
     $sidebar = $('#sidebar');

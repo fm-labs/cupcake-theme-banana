@@ -13,7 +13,7 @@ $this->loadHelper('Cupcake.Menu');
     <div class="row">
         <div class="col-xs-6 col-sm-6">
             <div class="mobile-header-logo">
-                <?= $this->element('layout/default/header/logo'); ?>
+                <?= $this->element('layout/header/logo'); ?>
             </div>
         </div>
         <div class="col-xs-6 col-sm-6">
