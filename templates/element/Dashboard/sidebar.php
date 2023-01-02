@@ -15,6 +15,7 @@ $logoUrl = \Cake\Core\Configure::read('ThemeBanana.Logo.url', 'logo.png');
 
         <?= $this->element('Dashboard/Sidebar/user'); ?>
     </div>
+
     <div class="sidebar-header sidebar-header-mobile hidden-lg hidden-md">
         <div class="mobile-logo">
             <?= $this->Html->image(

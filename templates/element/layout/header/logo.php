@@ -4,14 +4,14 @@ declare(strict_types=1);
 /**
  * @var \Cake\View\View $this
  */
-$logoImgUrl = \Cake\Core\Configure::read('Theme.Ui.Logo.url') ?: 'ThemeBanana.logo/logo-icon-normal.svg';
-$logoUrl = \Cake\Core\Configure::read('Theme.Ui.Logo.url') ?: '/';
-$logoHeight = \Cake\Core\Configure::read('Theme.Ui.Logo.height') ?: null;
-$logoWidth = \Cake\Core\Configure::read('Theme.Ui.Logo.width') ?: null;
+$logoImgUrl = \Cake\Core\Configure::read('ThemeBanana.Logo.url', 'logo.png');
+$logoTargetUrl = \Cake\Core\Configure::read('ThemeBanana.Logo.targetUrl', '/');
+$logoHeight = \Cake\Core\Configure::read('ThemeBanana.Logo.height', 50);
+$logoWidth = \Cake\Core\Configure::read('ThemeBanana.Logo.width', null);
 ?>
 <div class="header-logo">
     <?= $this->Html->image(
         $logoImgUrl,
-        ['height' => $logoHeight, 'width' => $logoWidth, 'url' => $logoUrl]
+        ['height' => $logoHeight, 'width' => $logoWidth, 'url' => $logoTargetUrl]
     ); ?>
 </div>
