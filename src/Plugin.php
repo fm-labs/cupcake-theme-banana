@@ -4,11 +4,10 @@ declare(strict_types=1);
 namespace ThemeBanana;
 
 use Cake\Core\BasePlugin;
-use Cake\Core\Configure;
 use Cake\Core\PluginApplicationInterface;
 use Cake\Event\EventListenerInterface;
 use Cake\Event\EventManager;
-use Cupcake\Menu\Menu;
+use Cupcake\Menu\MenuManager;
 
 class Plugin extends BasePlugin implements EventListenerInterface
 {
@@ -23,7 +22,7 @@ class Plugin extends BasePlugin implements EventListenerInterface
 
         EventManager::instance()->on($this);
 
-        Menu::setConfig('primary', [
+        MenuManager::setConfig('primary', [
             'className' => function () {
                 return [
         /*
@@ -35,7 +34,7 @@ class Plugin extends BasePlugin implements EventListenerInterface
                 ];
             },
         ]);
-        Menu::setConfig('footer', [
+        MenuManager::setConfig('footer', [
             'className' => function () {
                 return [
                     /*
