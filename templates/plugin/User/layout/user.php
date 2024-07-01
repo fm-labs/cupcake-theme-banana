@@ -22,8 +22,11 @@
         <div class="logo">
             <?=
             $this->Html->image(
-                'logo.png',
-                ['height' => '75']
+                \Cake\Core\Configure::read('ThemeBanana.Logo.url'),
+                [
+                    'alt' => Cake\Core\Configure::read('ThemeBanana.Logo.alt'),
+                    'height' => '75'
+                ],
             );
             ?>
         </div>

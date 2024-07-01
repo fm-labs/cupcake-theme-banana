@@ -1,1 +1,1 @@
-# Cupcake Theme "Banana"
+# Cupcake "Banana" Theme

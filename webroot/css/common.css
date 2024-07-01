@@ -830,6 +830,7 @@ div.checkbox .checkmark:after {
   display: block;
   margin-bottom: 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  padding: 0.5em;
 }
 .small-box > .inner {
   padding: 10px;
@@ -1302,6 +1303,7 @@ ul.nav-horizontal::after {
 }
 form fieldset legend {
   font-weight: bold;
+  margin-bottom: 1.2em;
 }
 form label {
   display: block;
@@ -1309,6 +1311,9 @@ form label {
 }
 form .form-group {
   min-height: 42px;
+}
+form .row {
+  margin-bottom: 1em;
 }
 form .form-control {
   color: #314354;

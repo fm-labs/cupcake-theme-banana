@@ -1,12 +1,12 @@
 <?php
 $this->extend('/base');
-$this->assign('title', __('Password recovery'));
+$this->assign('title', __d('user','Password recovery'));
 $form = $this->get('form');
 ?>
 <div class="view-auth">
-    <h1><?= __('Forgot password?'); ?></h1>
+    <h1><?= __d('user','Forgot password?'); ?></h1>
     <p>
-        <?= __('Enter your email address to reset your password.'); ?>
+        <?= __d('user','Enter your email address to reset your password.'); ?>
     </p>
 
     <div class="login-message">
@@ -22,13 +22,13 @@ $form = $this->get('form');
             <?= $this->Form->control('username', [
                 'required' => true,
                 'type' => 'email',
-                'placeholder' => __('Enter your email address'),
+                'placeholder' => __d('user','Enter your email address'),
                 'label' => false,
             ]); ?>
-            <?= $this->Form->submit(__('Request new password'), ['class' => 'btn btn-primary btn-block']); ?>
+            <?= $this->Form->submit(__d('user','Request new password'), ['class' => 'btn btn-primary btn-block']); ?>
             <?= $this->Form->end(); ?>
             <p>
-                <?= $this->Html->link(__('Back to login?'), ['_name' => 'user:login']); ?>
+                <?= $this->Html->link(__d('user','Back to login?'), ['_name' => 'user:login']); ?>
             </p>
         </div>
     </div>

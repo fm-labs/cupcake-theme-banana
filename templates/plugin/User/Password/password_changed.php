@@ -1,6 +1,6 @@
 <?php
 $this->extend('/base');
-$this->assign('title', __('Password recovery'));
+$this->assign('title', __d('user','Password recovery'));
 ?>
 <div class="view-auth view-auth-success">
     <div class="login-message">
@@ -8,9 +8,9 @@ $this->assign('title', __('Password recovery'));
     </div>
 
     <?= $this->element('Login/message_success', [
-        'heading' => __('Your password has been changed!'),
+        'heading' => __d('user','Your password has been changed!'),
         'body' => [],
-        'link' => [__('Back to settings?'), \Cake\Core\Configure::read('User.Pages.settings')]
+        'link' => [__d('user','Back to settings?'), \Cake\Core\Configure::read('User.Pages.settings')]
     ]); ?>
 
 </div>

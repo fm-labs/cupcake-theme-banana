@@ -15,7 +15,7 @@
     <div id="content">
         <?= $this->element('Dashboard/user_notice'); ?>
         <?= $this->element('Dashboard/breadcrumbs'); ?>
-        <?= $this->element('Dashboard/search'); ?>
+        <?= '' //@todo $this->element('Dashboard/search'); ?>
 
         <div id="header">
             <?php echo $this->fetch('header'); ?>
@@ -25,11 +25,12 @@
             <?php echo $this->fetch('toolbar'); ?>
         </div>
 
-        <main id="main" class="container-fluid">
+        <div id="flash-messages">
+            <?php echo $this->Flash->render(); ?>
+            <?php echo $this->Flash->render('auth'); ?>
+        </div>
 
-            <div id="flash-messages">
-                <?php echo $this->Flash->render(); ?>
-            </div>
+        <main id="main" class="container-fluid">
 
             <?php echo $this->fetch('content'); ?>
         </main>

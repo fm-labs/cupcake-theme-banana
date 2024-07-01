@@ -5,6 +5,8 @@ namespace ThemeBanana;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
+use Cake\Event\Event;
+use Cake\Event\EventInterface;
 use Cake\Event\EventListenerInterface;
 use Cake\Event\EventManager;
 use Cupcake\Menu\MenuManager;
@@ -19,6 +21,8 @@ class Plugin extends BasePlugin implements EventListenerInterface
         parent::bootstrap($app);
 
         $app->addPlugin('Bootstrap');
+
+        //@todo $app->addOptionalPlugin('Settings');
 
         EventManager::instance()->on($this);
 
@@ -63,7 +67,7 @@ class Plugin extends BasePlugin implements EventListenerInterface
     public function implementedEvents(): array
     {
         return [
-//            'View.beforeRender' => function (Event $event) {
+//            'View.beforeRender' => function (EventInterface $event) {
 //                //debug("view: before render");
 //                /** @var \Cake\View\View $view */
 //                $view = $event->getSubject();
@@ -73,9 +77,10 @@ class Plugin extends BasePlugin implements EventListenerInterface
 //                ) {
 //                    $view->helpers()->unload('Form');
 //                }
-//                $view->loadHelper('Form', ['className' => 'Bootstrap.Form']);
+//                //$view->loadHelper('Form', ['className' => 'Bootstrap.Form']);
+//                $view->loadHelper('Bootstrap.Form');
 //            },
-//            'Controller.beforeRender' => function (Event $event) {
+//            'Controller.beforeRender' => function (EventInterface $event) {
 //                //debug("controller: before render");
 //                /** @var \Cake\Controller\Controller $controller */
 //                $controller = $event->getSubject();

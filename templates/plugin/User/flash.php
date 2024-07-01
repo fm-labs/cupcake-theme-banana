@@ -2,6 +2,6 @@
     <?= $this->element('Login/message_success', [
         'heading' => '',
         'body' => $this->Flash->render('auth'),
-        'link' => [__('Back to login?'), \Cake\Core\Configure::read('User.Pages.login')]
+        'link' => [__d('user','Back to login?'), \Cake\Core\Configure::read('User.Pages.login')]
     ]); ?>
 </div>

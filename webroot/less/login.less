@@ -13,7 +13,7 @@
 @import "components/navigation.less";
 
 @login-bg-color: #314354;
-@login-box-padding: 20px;
+@login-box-padding: 0.7em;
 
 @login-container-width: 960px;
 @login-container-height: 360px;
@@ -146,8 +146,14 @@ form input[type="email"].form-control {
     max-width: 100%;
   }
 
-  .form-control, button[type="submit"] {
-    //margin-bottom: @login-box-padding;
+  .form-control {
+    margin-bottom: @login-box-padding;
+  }
+
+  input[type="submit"] {
+    padding: @login-box-padding * 1.5;
+    margin-bottom: @login-box-padding;
+    text-align: center;
   }
 
   .btn-block {

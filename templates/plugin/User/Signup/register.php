@@ -3,7 +3,7 @@
 use Cake\Core\Configure;
 
 $this->setLayout('user');
-$this->assign('title', __('Register'));
+$this->assign('title', __d('user','Register'));
 
 $form = $this->get('form');
 ?>
@@ -14,7 +14,7 @@ $form = $this->get('form');
             <div class="col-sm-12 col-md-7">
                 <div class="login-box login-box-form box-form">
                     <div class="login-heading">
-                        <?= __('Create an account'); ?>
+                        <?= __d('user','Create an account'); ?>
                     </div>
                     <div class="login-message">
                         <?php echo $this->Flash->render('auth'); ?>
@@ -25,30 +25,30 @@ $form = $this->get('form');
                             'required' => true,
                             'type' => 'email',
                             'class' => 'form-control',
-                            'placeholder' => __('E-Mail'),
+                            'placeholder' => __d('user','E-Mail'),
                             'label' => false,
                         ]); ?>
                         <?= $this->Form->control('password1', [
                             'required' => true,
                             'type' => 'password',
                             'class' => 'form-control',
-                            'placeholder' => __('Password'),
+                            'placeholder' => __d('user','Password'),
                             'label' => false,
                         ]); ?>
                         <?= $this->Form->control('password2', [
                             'required' => true,
                             'type' => 'password',
                             'class' => 'form-control',
-                            'placeholder' => __('Repeat password'),
+                            'placeholder' => __d('user','Repeat password'),
                             'label' => false,
                         ]); ?>
                         <?= $this->Form->control('agree_terms', [
                             'required' => true,
                             'type' => 'checkbox',
-                            'label' => __(
+                            'label' => __d('user',
                                 'I accept the {0}.',
                                 $this->Html->link(
-                                    __('terms and conditions'),
+                                    __d('user','terms and conditions'),
                                     Configure::read('User.Pages.terms', '/terms'),
                                     ['target' => '_blank']
                                 )
@@ -59,7 +59,7 @@ $form = $this->get('form');
                             <?= $this->Form->control('g-recaptcha-response', ['type' => 'recaptcha', 'label' => false]); ?>
                         <?php endif; ?>
                         <?= $this->Form->submit(
-                            __('Create account'),
+                            __d('user','Create account'),
                             ['class' => 'btn btn-block btn-primary']
                         ); ?>
                         <?= $this->Form->end(); ?>
@@ -70,15 +70,15 @@ $form = $this->get('form');
             <div class="col-sm-12 col-md-5">
                 <div class="login-box">
                     <div class="login-heading">
-                        <?= __('You already have an account?'); ?>
+                        <?= __d('user','You already have an account?'); ?>
                     </div>
                     <div class="login-body">
                         <p class="hidden-xs">
-                            <?= __('Please log in to access your user account.'); ?>
+                            <?= __d('user','Please log in to access your user account.'); ?>
                         </p>
                         <p>
                             <?= $this->Html->link(
-                                __('To the login'),
+                                __d('user','To the login'),
                                 Configure::read('User.Pages.login', ['_name' => 'user:login']),
                                 ['class' => 'btn btn-primary btn-block-xs']
                             ); ?>

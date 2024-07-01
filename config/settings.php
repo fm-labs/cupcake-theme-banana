@@ -47,7 +47,7 @@ return ['Settings' => [
                 'default' => 'primary',
                 'input' => [
                     'empty' => true,
-                    'options' => \Cupcake\Menu\Menu::configured(),
+                    'options' => \Cupcake\Menu\MenuManager::configured(),
                 ],
             ],
             'Header.Mobile.menuName' => [
@@ -57,7 +57,7 @@ return ['Settings' => [
                 'default' => 'primary',
                 'input' => [
                     'empty' => true,
-                    'options' => \Cupcake\Menu\Menu::configured(),
+                    'options' => \Cupcake\Menu\MenuManager::configured(),
                 ],
             ],
             'Footer.noticeText' => [
@@ -72,7 +72,7 @@ return ['Settings' => [
                 'default' => 'footer',
                 'input' => [
                     'empty' => true,
-                    'options' => \Cupcake\Menu\Menu::configured(),
+                    'options' => \Cupcake\Menu\MenuManager::configured(),
                 ],
             ],
         ],

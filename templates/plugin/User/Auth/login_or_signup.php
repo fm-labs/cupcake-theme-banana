@@ -7,12 +7,37 @@ $this->assign('title', __d('user','Login'));
 $this->setLayout('user');
 ?>
 <div class="view-login">
-    <div class="login-container-simple">
+    <div class="login-container">
         <div class="row">
-            <div class="col-sm-12">
-                <div class="login-box login-box-form box-form" style="margin: 0 auto;">
-                    <div class="login-heading text-center">
-                        <?= __d('user','Login'); ?>
+            <div class="col-sm-12 col-md-5 hidden-xs hidden-sm">
+                <div class="login-box">
+                    <div class="login-heading">
+                        <p>
+                            <?= __d('user','You don’t have an account yet?'); ?>
+                        </p>
+                        <p>
+                            <?= __d('user','No Problem. Register easy, free and without obligation!'); ?>
+                        </p>
+                    </div>
+                    <div class="login-body">
+                        <p>
+                            <?= $this->Html->link(
+                                __d('user','Create an account now'),
+                                Configure::read(
+                                    'User.Pages.register',
+                                    ['_name' => 'user:register']
+                                ),
+                                ['class' => 'btn btn-primary']
+                            ); ?>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-7">
+                <div class="login-box login-box-form box-form">
+                    <div class="login-heading">
+                        <?= __d('user','Account Login'); ?>
                     </div>
                     <div class="login-message">
                         <?php echo $this->Flash->render('auth'); ?>
@@ -44,15 +69,12 @@ $this->setLayout('user');
                         ); ?>
                         <?= $this->Form->end(); ?>
                         <p>
-                            <?php if (Configure::read('User.Password.recoveryEnabled')) : ?>
-                                <?= $this->Html->link(
-                                    __d('user','Forgot password?'),
-                                    Configure::read('User.Pages.passwordf', ['_name' => 'user:passwordforgotten'])
-                                ); ?>
-                            <?php endif; ?>
-                        </p>
-                        <p>
-                            <?php //echo $this->Html->link(__d('user', 'Back to the website'), '/'); ?>
+                            <?= $this->Html->link(
+                                __d('user','Forgot password?'),
+                                Configure::read('User.Pages.passwordf', ['_name' => 'user:passwordforgotten'])
+                            ); ?>
+                            <hr />
+                            <?= $this->Html->link(__d('user', 'Back to the website'), '/'); ?>
                         </p>
                     </div>
                 </div>

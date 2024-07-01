@@ -25,7 +25,7 @@ $this->set('_no_tracking', true);
         <?= $this->fetch('userActions'); ?>
     <?php else : ?>
         <p style="margin: 2em 0; text-align: center;">
-            <?= $this->Html->link(__("Back to Settings"), ['plugin' => null, 'controller' => 'Dashboard', 'action' => 'settings']); ?>
+            <?= $this->Html->link(__d('user',"Back to Settings"), ['plugin' => null, 'controller' => 'Dashboard', 'action' => 'settings']); ?>
         </p>
     <?php endif; ?>
 </div>

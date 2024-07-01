@@ -544,6 +544,7 @@ input[type="date"]:focus {
 }
 form fieldset legend {
   font-weight: bold;
+  margin-bottom: 1.2em;
 }
 form label {
   display: block;
@@ -551,6 +552,9 @@ form label {
 }
 form .form-group {
   min-height: 42px;
+}
+form .row {
+  margin-bottom: 1em;
 }
 form .form-control {
   color: #314354;
@@ -871,7 +875,7 @@ form input[type="email"].form-control {
   margin: 40px auto;
 }
 .box-form {
-  padding: 20px;
+  padding: 0.7em;
   background-color: #FFFFFF;
   border-radius: 5px;
   color: #141C23;
@@ -880,7 +884,7 @@ form input[type="email"].form-control {
   color: #141C23;
 }
 .box-form .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 0.7em;
 }
 .box-form .form-control {
   border: none;
@@ -888,13 +892,21 @@ form input[type="email"].form-control {
   background-color: #F2F5F6;
   max-width: 100%;
 }
+.box-form .form-control {
+  margin-bottom: 0.7em;
+}
+.box-form input[type="submit"] {
+  padding: 1.05em;
+  margin-bottom: 0.7em;
+  text-align: center;
+}
 .box-form .btn-block {
   text-align: left;
 }
 .box-form,
 .login-box {
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 0.7em;
+  margin-bottom: 0.7em;
 }
 .box-form .alert,
 .login-box .alert {
@@ -935,10 +947,10 @@ form input[type="email"].form-control {
     width: 960px;
     height: 360px;
     background-color: #314354;
-    padding: 40px;
+    padding: 1.4em;
   }
   .box-form {
-    padding: 40px;
+    padding: 1.4em;
     background-color: #FFFFFF;
   }
   .box-form .form-group > label {
@@ -947,13 +959,13 @@ form input[type="email"].form-control {
   .login-box-form {
     width: 480px;
     min-height: 440px;
-    margin-top: -80px;
+    margin-top: -2.8em;
     box-shadow: rgba(0, 0, 0, 0.1) 0 10px 25px;
   }
   .login-box-form .login-heading {
     color: #141C23;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin-top: 0.7em;
+    margin-bottom: 1.75em;
   }
   .login-box-form .form-group > label {
     color: #141C23;
