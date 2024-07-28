@@ -1,0 +1,287 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-07-26 18:28+0000\n"
+"PO-Revision-Date: 2024-07-26 20:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.4\n"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/Sidebar/user.php:22
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/layout/blog.php:32
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/sidebar.php:54
+msgid "Logout"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/Sidebar/user.php:26
+msgid "Already registered?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/Sidebar/user.php:27
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:6
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:15
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:42
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:6
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:67
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:5
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:5
+msgid "Login"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/layout/blog.php:32
+msgid "You are logged in"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:27
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:24
+msgid "Username or Email"
+msgstr "Benutzername oder Email"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:33
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:58
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:35
+msgid "Password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:49
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:73
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:7
+msgid "Forgot password?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:65
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:16
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:87
+msgid "You don’t have an account yet?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:68
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:19
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:90
+msgid "No Problem. Register easy, free and without obligation!"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login.php:74
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:25
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:96
+msgid "Create an account now"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:40
+msgid "Account Login"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:52
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:28
+msgid "E-Mail"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Auth/login_or_signup.php:77
+msgid "Back to the website"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:3
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:6
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:36
+msgid "Change password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:20
+msgid "Enter current password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:27
+msgid "Enter new password"
+msgstr "Neues Passwort eingeben"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:34
+msgid "Repeat new password"
+msgstr "Neues Passwort wiederholden"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_change.php:41
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_changed.php:13
+msgid "Back to settings?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_changed.php:3
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:3
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:6
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:11
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_sent.php:3
+msgid "Password recovery"
+msgstr "Passwort zurücksetzen"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_changed.php:11
+msgid "Your password has been changed!"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:16
+msgid "Instructions on how to reset your password will follow via email."
+msgstr "Anweisungen zum Zurücksetzen Ihres Passwortes folgen via Email."
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:27
+msgid "Request new password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:11
+msgid "Password forgotten?"
+msgstr "Passwort vergessen?"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:21
+msgid "yourname@example.org"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:22
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:25
+msgid "Email"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:27
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:14
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:41
+msgid "Reset password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten1.php:31
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:42
+msgid "Cancel"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:6
+msgid "Reset account password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:26
+msgid "Your email address"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:30
+msgid "New password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_reset.php:36
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:42
+msgid "Repeat password"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_sent.php:7
+msgid "Check your mailbox!"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_sent.php:9
+msgid ""
+"You got an email with password recovery instructions, please check your "
+"mailbox."
+msgstr ""
+"Sie haben eine E-Mail mit Anweisungen zur Wiederherstellung des Passworts "
+"erhalten, bitte überprüfen Sie Ihr Postfach."
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_sent.php:10
+msgid ""
+"If you did not receive an email, please check your spam folder or contact "
+"support."
+msgstr ""
+"Wenn Sie keine E-Mail erhalten haben, überprüfen Sie bitte Ihren Spam-Ordner "
+"oder wenden Sie sich an den Support."
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_sent.php:12
+msgid "<- Back to login"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:3
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:7
+msgid "Activate account"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:9
+msgid ""
+"An activation link has been sent to your email upon registration. Please "
+"check your inbox."
+msgstr ""
+"Bei der Registrierung wurde Ihnen ein Aktivierungslink per E-Mail zugesandt. "
+"Bitte prüfen Sie Ihren Posteingang."
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:24
+msgid "Email address"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:29
+msgid "Activation code"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:31
+msgid "Activate"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:37
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/flash.php:5
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:30
+msgid "Back to login?"
+msgstr "Zurück zur Anmeldung?"
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/activate.php:39
+msgid "Contact support?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:6
+msgid "Register"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:17
+msgid "Create an account"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:48
+msgid "I accept the {0}."
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:51
+msgid "terms and conditions"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:62
+msgid "Create account"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:73
+msgid "You already have an account?"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:77
+msgid "Please log in to access your user account."
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Signup/register.php:81
+msgid "To the login"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/breadcrumbs.php:7
+msgid "Dashboard"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Dashboard/search.php:6
+msgid "Search"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Pagination/default.php:15
+msgid "previous"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/element/Pagination/default.php:17
+msgid "next"
+msgstr ""
+
+#: Users/phil/workspaces/php/cupcake-theme-banana/templates/plugin/User/Password/password_forgotten.php:15
+msgid "Enter your email address to request a new password."
+msgstr "Geben Sie Ihre E-Mail-Adresse ein, um ein neues Passwort anzufordern."
+
+#~ msgid "Username or email address"
+#~ msgstr "Benutzername oder Email"

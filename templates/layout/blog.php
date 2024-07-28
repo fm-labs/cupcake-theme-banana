@@ -29,7 +29,7 @@
 <div class="container">
 
     <?php if ($this->getRequest()->getSession()->read('Auth.User')): ?>
-        <?= __('You are logged in'); ?> | <?= $this->Html->link(__('Logout'), ['_name' => 'user:logout']); ?>
+        <?= __d('user', 'You are logged in'); ?> | <?= $this->Html->link(__d('user', 'Logout'), ['_name' => 'user:logout']); ?>
     <?php endif; ?>
 
     <div class="blog-header">

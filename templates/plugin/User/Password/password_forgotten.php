@@ -1,33 +1,34 @@
 <?php
-$this->extend('User./base');
-// breadcrumbs
-$this->loadHelper('Breadcrumbs');
-$this->Breadcrumbs->add(__d('user', 'Login'), ['_name' => 'user:login']);
-$this->Breadcrumbs->add(__d('user', 'Password recovery'));
-
-// no robots
-$this->Html->meta('robots', 'noindex,nofollow', ['block' => true]);
-
-$this->assign('title', __d('user', 'Password forgotten?'));
-
+$this->extend('/base');
+$this->assign('title', __d('user','Password recovery'));
+$form = $this->get('form');
 ?>
-<div id="user-password-forgotten-form" class="user-form">
-    <?= $this->Form->create($form); ?>
-
-    <div class="form-group form-floating">
-        <?= $this->Form->control('username', [
-            //'class' => 'form-control mb-3',
-            'type' => "text",
-            'placeholder' => __d('user', 'yourname@example.org'),
-            'label' => __d('user', 'Email')
-        ]); ?>
+<div class="view-auth">
+    <h1><?= __d('user','Forgot password?'); ?></h1>
+    <div class="login-message">
+        <?php echo $this->Flash->render('auth'); ?>
     </div>
 
-    <?= $this->Form->button(
-        __d('user', 'Reset password'), [
-        //'class' => 'w-100 btn btn-lg btn-primary',
-    ]); ?>
+    <div class="box-form box-form-shadow">
+        <div class="box-body">
+            <p>
+                <?= __d('theme_banana', 'Enter your email address to request a new password.'); ?>
+                <?= __d('theme_banana', 'Instructions on how to reset your password will follow via email.'); ?>
+            </p>
 
-    <?= $this->Html->link(__d('user', 'Cancel'), ['_name' => 'user:login'], ['class' => 'btn']); ?>
-    <?= $this->Form->end(); ?>
+            <?= $this->Form->create($form, ['novalidate' => 'novalidate']); ?>
+            <?= $this->Form->control('username', [
+                'class' => 'form-control',
+                'required' => true,
+                'type' => 'email',
+                'placeholder' => __d('user', 'Username'),
+                'label' => false,
+            ]); ?>
+            <?= $this->Form->submit(__d('user', 'Request new password'), ['class' => 'btn btn-primary btn-block']); ?>
+            <?= $this->Form->end(); ?>
+            <p>
+                <?= $this->Html->link(__d('theme_banana', 'Back to login?'), ['_name' => 'user:login']); ?>
+            </p>
+        </div>
+    </div>
 </div>

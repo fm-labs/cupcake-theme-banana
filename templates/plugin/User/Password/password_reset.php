@@ -17,29 +17,32 @@ $this->Html->meta('robots', 'noindex,nofollow', ['block' => true]);
         <?php echo $this->Flash->render('auth'); ?>
     </div>
 
-    <div class="login-box box-form">
-        <div class="login-body">
+    <div class="box-form box-form-shadow">
+        <div class="box-body">
             <?= $this->Form->create($user); ?>
             <?= $this->Form->hidden('password_reset_code'); ?>
             <?= $this->Form->control('username', [
-                'label' => __d('user','Email'),
-                'placeholder' => __d('user','Your email address'),
+                'label' => __d('user', 'Username'),
+                'placeholder' => __d('user', 'Your username'),
                 'required' => true,
+                'class' => 'form-control',
             ]); ?>
             <?= $this->Form->control('password1', [
                 'label' => __d('user','New password'),
                 'type' => 'password',
                 'required' => true,
                 'autocomplete' => 'off',
+                'class' => 'form-control',
             ]); ?>
             <?= $this->Form->control('password2', [
                 'label' => __d('user','Repeat password'),
                 'type' => 'password',
                 'required' => true,
                 'autocomplete' => 'off',
+                'class' => 'form-control',
             ]); ?>
             <?= $this->Form->submit(__d('user','Reset password'), ['class' => 'btn btn-primary btn-block']); ?>
-            <?= $this->Html->link(__d('user','Cancel'), \Cake\Core\Configure::read('User.Pages.login'), ['class' => 'btn btn-default btn-block']); ?>
+            <?= $this->Html->link(__d('user', 'Cancel'), ['_name' => 'user:login'], ['class' => 'btn btn-default btn-block text-center']); ?>
             <?= $this->Form->end(); ?>
         </div>
     </div>

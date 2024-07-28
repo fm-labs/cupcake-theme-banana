@@ -4,7 +4,7 @@
     <div id="breadcrumbs">
         <nav>
             <?php
-            $this->Breadcrumbs->prepend(__('Dashboard'), '/');
+            $this->Breadcrumbs->prepend(__d('theme_banana', 'Dashboard'), '/');
             echo $this->Breadcrumbs->render(
                 ['class' => 'nav-horizontal'],
                 [

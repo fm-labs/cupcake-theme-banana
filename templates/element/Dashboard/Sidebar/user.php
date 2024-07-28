@@ -19,12 +19,12 @@
     <?php if ($this->request->getSession()->read('Auth')) : ?>
         <div>
             <span><?= h($this->request->getSession()->read('Auth.display_name')); ?></span><br />
-            <?= $this->Html->link(__d('theme_banana', 'Logout'), ['_name' => 'user:logout']); ?>
+            <?= $this->Html->link(__d('user', 'Logout'), ['_name' => 'user:logout']); ?>
         </div>
     <?php else: ?>
         <div>
-            <span><?= __('Already registered?'); ?></span><br />
-            <?= $this->Html->link(__d('theme_banana', 'Login'), ['_name' => 'user:login']); ?>
+            <span><?= __d('user', 'Already registered?'); ?></span><br />
+            <?= $this->Html->link(__d('user', 'Login'), ['_name' => 'user:login']); ?>
         </div>
     <?php endif; ?>
     </div>

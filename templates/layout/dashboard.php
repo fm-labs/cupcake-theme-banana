@@ -17,17 +17,18 @@
         <?= $this->element('Dashboard/breadcrumbs'); ?>
         <?= '' //@todo $this->element('Dashboard/search'); ?>
 
+        <div id="flash-messages">
+            <?php echo $this->Flash->render(); ?>
+            <?php echo $this->Flash->render('auth'); ?>
+        </div>
+
+
         <div id="header">
             <?php echo $this->fetch('header'); ?>
         </div>
 
         <div id="toolbar">
             <?php echo $this->fetch('toolbar'); ?>
-        </div>
-
-        <div id="flash-messages">
-            <?php echo $this->Flash->render(); ?>
-            <?php echo $this->Flash->render('auth'); ?>
         </div>
 
         <main id="main" class="container-fluid">

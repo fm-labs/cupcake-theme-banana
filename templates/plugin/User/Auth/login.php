@@ -24,13 +24,13 @@ $this->setLayout('user');
                             'type' => 'email',
                             'required' => true,
                             'class' => 'form-control',
-                            'placeholder' => __d('user','E-Mail'),
+                            'placeholder' => __d('user', 'Username'),
                         ]); ?>
                         <?= $this->Form->control('password', [
                             'label' => false,
                             'type' => 'password',
                             'class' => 'form-control',
-                            'placeholder' => __d('user','Password'),
+                            'placeholder' => __d('user', 'Password'),
                         ]); ?>
                         <?php if (Plugin::isLoaded('GoogleRecaptcha') && Configure::read('User.Recaptcha.enabled')) : ?>
                             <?= $this->Form->control(

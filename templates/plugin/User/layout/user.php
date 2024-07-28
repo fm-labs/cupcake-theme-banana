@@ -16,7 +16,7 @@
     <?= $this->Html->script('/libs/jquery/jquery.min'); ?>
     <?= $this->fetch('headjs'); ?>
 </head>
-<body>
+<body class="user-layout">
 <div class="wrapper">
     <header class="container">
         <div class="logo">
