@@ -15,15 +15,16 @@ $form = $this->get('form');
                 <?= __d('theme_banana', 'Enter your email address to request a new password.'); ?>
                 <?= __d('theme_banana', 'Instructions on how to reset your password will follow via email.'); ?>
             </p>
-
-            <?= $this->Form->create($form, ['novalidate' => 'novalidate']); ?>
-            <?= $this->Form->control('username', [
-                'class' => 'form-control',
-                'required' => true,
-                'type' => 'email',
-                'placeholder' => __d('user', 'Username'),
-                'label' => false,
-            ]); ?>
+            <?= $this->Form->create($form); ?>
+            <div class="pb-3">
+                <?= $this->Form->control('username', [
+                    'class' => 'form-control',
+                    'required' => true,
+                    'type' => 'text',
+                    'placeholder' => __d('user', 'Username'),
+                    'label' => false,
+                ]); ?>
+            </div>
             <?= $this->Form->submit(__d('user', 'Request new password'), ['class' => 'btn btn-primary btn-block']); ?>
             <?= $this->Form->end(); ?>
             <p>
