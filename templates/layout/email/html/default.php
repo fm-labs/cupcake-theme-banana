@@ -13,13 +13,13 @@
 
 <?php $this->start('byebye'); ?>
 <p>
-    Your ThemeBanana-Team
+    Your Banana-Team
 </p>
 <?php $this->end(); ?>
 
 <?php $this->start('footer_notice'); ?>
 <div class="email-footer-notice">
-    Notice: This message and any attachments are the property of ThemeBanana and are intended solely for the named recipients or entity to whom this message is addressed. If you have received this message in error please inform the sender via e-mail and delete the message. If you are not the intended recipient you are not allowed to use, copy or disclose the contents or attachments in whole or in part.
+    Notice: This message and any attachments are the property of Banana and are intended solely for the named recipients or entity to whom this message is addressed. If you have received this message in error please inform the sender via e-mail and delete the message. If you are not the intended recipient you are not allowed to use, copy or disclose the contents or attachments in whole or in part.
 </div>
 <?php $this->end(); ?>
 

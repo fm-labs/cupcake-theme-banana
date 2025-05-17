@@ -1,3 +1,3 @@
 <p>
-    Ihr ThemeBanana-Team
+    Ihr Banana-Team
 </p>

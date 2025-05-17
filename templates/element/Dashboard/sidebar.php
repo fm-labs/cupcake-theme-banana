@@ -1,7 +1,7 @@
 <?php
-$sidebarMenu = \Cake\Core\Configure::read('ThemeBanana.Sidebar.menu', []);
-$sidebarMenu2 = \Cake\Core\Configure::read('ThemeBanana.Sidebar.menu2', []);
-$logoUrl = \Cake\Core\Configure::read('ThemeBanana.Logo.url', 'logo.png');
+$sidebarMenu = \Cake\Core\Configure::read('Banana.Sidebar.menu', []);
+$sidebarMenu2 = \Cake\Core\Configure::read('Banana.Sidebar.menu2', []);
+$logoUrl = \Cake\Core\Configure::read('Banana.Logo.url', 'logo.png');
 ?>
 <aside id="sidebar" class="sidebar">
 
@@ -59,7 +59,7 @@ $logoUrl = \Cake\Core\Configure::read('ThemeBanana.Logo.url', 'logo.png');
 
         </div>
         <div class="sidebar-bottom-info sidebar-item hidden-xs hidden-sm">
-            <?= h(Cake\Core\Configure::read('ThemeBanana.Sidebar.bottomText')); ?>
+            <?= h(Cake\Core\Configure::read('Banana.Sidebar.bottomText')); ?>
         </div>
     </div>
 </aside>

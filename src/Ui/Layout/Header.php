@@ -1,25 +1,26 @@
 <?php
-namespace ThemeBanana\Ui\Layout;
+declare(strict_types=1);
+
+namespace Banana\Ui\Layout;
 
 use Cake\Core\Configure;
-use Cake\Core\Plugin;
 use Cupcake\Menu\Menu;
 
 class Header
 {
-    protected $elementName = "layout/defaut/header";
+    protected string $elementName = 'layout/defaut/header';
 
     public function data()
     {
         $menu = null;
-        $menuId = Configure::read('ThemeBanana.Menu.header');
+        $menuId = Configure::read('Banana.Menu.header');
         if ($menuId) {
             $menu = Menu::get($menuId);
         }
 
         return [
             'menuId' => $menuId,
-            'menu' => $menu
+            'menu' => $menu,
         ];
     }
 }

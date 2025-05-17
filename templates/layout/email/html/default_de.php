@@ -13,13 +13,13 @@
 
 <?php $this->start('byebye'); ?>
 <p>
-    Ihr ThemeBanana-Team
+    Ihr Banana-Team
 </p>
 <?php $this->end(); ?>
 
 <?php $this->start('footer_notice'); ?>
 <div class="email-footer-notice" style="font-size: 12px;">
-    Anmerkung: Diese Nachricht und alle Anhänge sind Eigentum von ThemeBanana und nur für die angegebene Person oder Organisation bestimmt.
+    Anmerkung: Diese Nachricht und alle Anhänge sind Eigentum von Banana und nur für die angegebene Person oder Organisation bestimmt.
     Wenn Sie diese Nachricht irrtümlich erhalten, informieren Sie bitte den Absender per E-Mail und löschen Sie die Nachricht.
     Wenn Sie nicht der vorgesehene Empfänger sind, dürfen Sie diese Nachricht oder die Anhänge weder ganz noch teilweise
     verwenden, kopieren oder weiterverbreiten.

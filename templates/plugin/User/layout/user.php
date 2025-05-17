@@ -1,3 +1,8 @@
+<?php
+
+use Cake\Core\Configure;
+
+?>
 <html>
 <head>
     <?= $this->Html->charset() ?>
@@ -21,13 +26,13 @@
     <header class="container">
         <div class="logo">
             <?=
-            $this->Html->image(
-                \Cake\Core\Configure::read('ThemeBanana.Logo.url'),
+            Configure::read('Banana.Logo.url') ? $this->Html->image(
+                Configure::read('Banana.Logo.url'),
                 [
-                    'alt' => Cake\Core\Configure::read('ThemeBanana.Logo.alt'),
-                    'height' => '75'
+                    'alt' => Configure::read('Banana.Logo.alt'),
+                    'height' => '75',
                 ],
-            );
+            ) : '';
             ?>
         </div>
     </header>

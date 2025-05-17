@@ -1,12 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace ThemeBanana;
+namespace Banana;
 
 use Cake\Core\BasePlugin;
 use Cake\Core\PluginApplicationInterface;
-use Cake\Event\Event;
-use Cake\Event\EventInterface;
 use Cake\Event\EventListenerInterface;
 use Cake\Event\EventManager;
 use Cupcake\Menu\MenuManager;
@@ -55,9 +53,9 @@ class Plugin extends BasePlugin implements EventListenerInterface
             },
         ]);
         /*
-        Configure::write('ThemeBanana.Ui.Header.Screen.menuName', 'primary');
-        Configure::write('ThemeBanana.Ui.Header.Mobile.menuName', 'primary');
-        Configure::write('ThemeBanana.Ui.Footer.Nav.menuName', 'footer');
+        Configure::write('Banana.Ui.Header.Screen.menuName', 'primary');
+        Configure::write('Banana.Ui.Header.Mobile.menuName', 'primary');
+        Configure::write('Banana.Ui.Footer.Nav.menuName', 'footer');
         */
     }
 
