@@ -70,7 +70,7 @@ endif;
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css(['normalize.min', 'milligram.min', 'fonts', 'cake', 'home']) ?>
+    <?= '' // $this->Html->css(['normalize.min', 'milligram.min', 'fonts', 'cake', 'home']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
