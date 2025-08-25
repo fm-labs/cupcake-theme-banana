@@ -26,10 +26,10 @@ use Cake\Core\Configure;
     <header class="container">
         <div class="logo">
             <?=
-            Configure::read('Banana.Logo.url') ? $this->Html->image(
-                Configure::read('Banana.Logo.url'),
+            Configure::read('ThemeBanana.Logo.url') ? $this->Html->image(
+                Configure::read('ThemeBanana.Logo.url'),
                 [
-                    'alt' => Configure::read('Banana.Logo.alt'),
+                    'alt' => Configure::read('ThemeBanana.Logo.alt'),
                     'height' => '75',
                 ],
             ) : '';

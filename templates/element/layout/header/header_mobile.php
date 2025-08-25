@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * @var \Cake\View\View $this
  */
-$menuKey = Cake\Core\Configure::read('Banana.Ui.Header.Nav.menuName', 'primary');
+$menuKey = Cake\Core\Configure::read('ThemeBanana.Ui.Header.Nav.menuName', 'primary');
 //$menu = \Cupcake\Menu\Menu::get($menuKey);
 $menu = null;
 
