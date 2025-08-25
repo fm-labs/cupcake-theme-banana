@@ -1,6 +1,6 @@
 <?php
 return ['Settings' => [
-    'Banana' => [
+    'ThemeBanana' => [
         'groups' => [
             'Logo' => [
                 'label' => __('Logo'),
