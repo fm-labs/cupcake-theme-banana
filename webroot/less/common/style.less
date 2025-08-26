@@ -1,208 +1,208 @@
 @import "../variables";
 
-body {
+.theme {
   font-family: @font-family-base;
   font-size: @font-size-base;
   font-weight: normal;
   color: @color-second;
   background-color: @color-bg-body;
-}
 
-.container {
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-h1, .h1 {
-  font-family: @font-family-h1;
-  font-size: @font-size-h1;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: @color-primary;
-  margin-bottom: 20px;
-  word-wrap: break-word;
-  word-break: normal;
-}
-
-h2, .h2 {
-  font-family: @font-family-h2;
-  font-size: @font-size-h2;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: @color-primary;
-  margin-bottom: 18px;
-}
-
-h3, .h3 {
-  font-family: @font-family-h3;
-  font-size: @font-size-h3;
-  font-weight: 400;
-  text-transform: uppercase;
-  color: @color-primary;
-  margin-bottom: 16px;
-}
-
-h4, .h4 {
-  font-family: @font-family-h4;
-  font-size: @font-size-h4;
-  font-weight: 300;
-  color: @color-primary;
-  margin-bottom: 1em;
-}
-
-h5, .h5 {
-  font-family: @font-family-h5;
-  font-size: @font-size-h5;
-  font-weight: 300;
-  color: @color-primary;
-  margin-bottom: 0.5em;
-}
-
-a, .link {
-  color: @color-link;
-  text-decoration: none;
-
-  &:hover {
-    color: @color-link-highlight;
-    cursor: pointer;
-    text-decoration: none;
-  }
-}
-
-strong, b {
-  font-weight: 700;
-}
-
-small {
-  font-size: 80%;
-}
-
-p {
-  line-height: 25px; //@todo use variable
-}
-
-// I M A G E S
-img {
-  max-width: 100%;
-}
-
-div.image {}
-
-div.image-rounded,
-div.image-rounded img,
-img.image-rounded {
-  border-radius: @border-radius-base;
-}
-
-// T E X T
-.text-primary {
-  color: @color-primary;
-}
-
-.text-second {
-  color: @color-second;
-}
-
-.text-third {
-  color: @color-third;
-}
-
-.text-success, .text-ok {
-  color: @color-success !important;
-}
-
-.text-error, .text-danger {
-  color: @color-danger !important;
-}
-
-.text-warning {
-  color: #ff9900;
-}
-
-.text-center {
-  text-align: center !important;
-}
-
-.text-right {
-  text-align: right !important;
-}
-
-.text-left {
-  text-align: left !important;
-}
-
-.text-bold {
-  font-weight: 700;
-}
-
-.text-1x {
-  font-size: @font-size-base;
-  line-height: @font-size-base;
-}
-
-.text-2x {
-  font-size: @font-size-base * 2;
-  line-height: @font-size-base * 2;
-}
-
-.text-3x {
-  font-size: @font-size-base * 3;
-  line-height: @font-size-base * 3;
-}
-
-.text-4x {
-  font-size: @font-size-base * 4;
-  line-height: @font-size-base * 4;
-}
-
-// Money
-.money {
-  &.money-pos {
-    .text-success();
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
-  &.money-neg {
-    .text-error();
+  h1, .h1 {
+    font-family: @font-family-h1;
+    font-size: @font-size-h1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @color-primary;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    word-break: normal;
   }
-}
 
-/** Normalize DATE INPUTS **/
+  h2, .h2 {
+    font-family: @font-family-h2;
+    font-size: @font-size-h2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @color-primary;
+    margin-bottom: 18px;
+  }
 
-/* Removes the clear button from date inputs */
-input[type="date"]::-webkit-clear-button {
-  display: none;
-}
+  h3, .h3 {
+    font-family: @font-family-h3;
+    font-size: @font-size-h3;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @color-primary;
+    margin-bottom: 16px;
+  }
 
-/* Removes the spin button */
-input[type="date"]::-webkit-inner-spin-button {
-  display: none;
-}
+  h4, .h4 {
+    font-family: @font-family-h4;
+    font-size: @font-size-h4;
+    font-weight: 300;
+    color: @color-primary;
+    margin-bottom: 1em;
+  }
 
-/* Always display the drop down caret */
-input[type="date"]::-webkit-calendar-picker-indicator {
-  /*color: #2c3e50;*/
-}
+  h5, .h5 {
+    font-family: @font-family-h5;
+    font-size: @font-size-h5;
+    font-weight: 300;
+    color: @color-primary;
+    margin-bottom: 0.5em;
+  }
 
-/* A few custom styles for date inputs */
-input[type="date"] {
-  appearance: none;
-  -webkit-appearance: none;
-  /*color: #95a5a6;*/
-  /* font-size: 18px;*/
-  border: 1px solid #fafafa;
-  border-style: solid;
-  border-width: 0 0 2px 0;
-  border-color: #C1C1C1;
-  background: #fafafa;
-  padding:10px 5px;
-  display: inline-block !important;
-  visibility: visible !important;
-}
+  a, .link {
+    color: @color-link;
+    //text-decoration: none;
 
-input[type="date"], input[type="date"]:focus {
-  /*color: #95a5a6;*/
-  border-color: #C1C1C1;
-  box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
+    &:hover {
+      color: @color-link-highlight;
+      cursor: pointer;
+      //text-decoration: none;
+    }
+  }
+
+  strong, b {
+    font-weight: 700;
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  p {
+    line-height: 25px; //@todo use variable
+  }
+
+  // I M A G E S
+  img {
+    max-width: 100%;
+  }
+
+  div.image {}
+
+  div.image-rounded,
+  div.image-rounded img,
+  img.image-rounded {
+    border-radius: @border-radius-base;
+  }
+
+  // T E X T
+  .text-primary {
+    color: @color-primary;
+  }
+
+  .text-second {
+    color: @color-second;
+  }
+
+  .text-third {
+    color: @color-third;
+  }
+
+  .text-success, .text-ok {
+    color: @color-success !important;
+  }
+
+  .text-error, .text-danger {
+    color: @color-danger !important;
+  }
+
+  .text-warning {
+    color: #ff9900;
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .text-right {
+    text-align: right !important;
+  }
+
+  .text-left {
+    text-align: left !important;
+  }
+
+  .text-bold {
+    font-weight: 700;
+  }
+
+  .text-1x {
+    font-size: @font-size-base;
+    line-height: @font-size-base;
+  }
+
+  .text-2x {
+    font-size: @font-size-base * 2;
+    line-height: @font-size-base * 2;
+  }
+
+  .text-3x {
+    font-size: @font-size-base * 3;
+    line-height: @font-size-base * 3;
+  }
+
+  .text-4x {
+    font-size: @font-size-base * 4;
+    line-height: @font-size-base * 4;
+  }
+
+  // Money
+  .money {
+    &.money-pos {
+      .text-success();
+    }
+
+    &.money-neg {
+      .text-error();
+    }
+  }
+
+  /** Normalize DATE INPUTS **/
+
+  /* Removes the clear button from date inputs */
+  input[type="date"]::-webkit-clear-button {
+    display: none;
+  }
+
+  /* Removes the spin button */
+  input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+
+  /* Always display the drop down caret */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    /*color: #2c3e50;*/
+  }
+
+  /* A few custom styles for date inputs */
+  input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    /*color: #95a5a6;*/
+    /* font-size: 18px;*/
+    border: 1px solid #fafafa;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #C1C1C1;
+    background: #fafafa;
+    padding:10px 5px;
+    display: inline-block !important;
+    visibility: visible !important;
+  }
+
+  input[type="date"], input[type="date"]:focus {
+    /*color: #95a5a6;*/
+    border-color: #C1C1C1;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+  }
 }

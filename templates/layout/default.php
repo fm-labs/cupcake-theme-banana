@@ -10,7 +10,7 @@
     <title><?= $this->fetch('title'); ?></title>
     <?= $this->element('layout/head'); ?>
 </head>
-<body>
+<body class="theme">
 <?= $this->fetch('top'); ?>
 <div class="wrapper">
     <header id="page-header" class="header top-header">

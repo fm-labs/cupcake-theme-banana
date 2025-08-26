@@ -14,7 +14,7 @@
     <?= $this->Html->css('frontend'); ?>
     <?= $this->fetch('css'); ?>
 </head>
-<body>
+<body class="theme">
 <?= $this->fetch('top'); ?>
 <div class="wrapper">
 

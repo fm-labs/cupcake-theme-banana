@@ -22,7 +22,7 @@
     <?= $this->fetch('scripts'); ?>
 </head>
 
-<body>
+<body class="theme">
 
 <?= $this->element('layout/blog/header'); ?>
 

@@ -7,7 +7,7 @@
     <title><?= $this->fetch('title'); ?></title>
     <?= $this->element('layout/head'); ?>
 </head>
-<body class="has-sidebar">
+<body class="has-sidebar theme">
 <div id="wrapper">
 
     <?= $this->element('Dashboard/sidebar'); ?>
